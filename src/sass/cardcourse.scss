@@ -1,0 +1,14 @@
+@import "variables";
+@import "mixins";
+
+.single-card-course {
+  display: flex;
+}
+
+.image-course-card {
+  padding-right: inherit;
+}
+
+.nav-link {
+  margin-top: 2%;
+}

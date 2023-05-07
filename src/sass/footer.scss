@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'mixins';
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgb(219, 219, 219);
+    min-height: 5vh;
+    margin:0px;
+}

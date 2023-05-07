@@ -10,8 +10,12 @@
     "@types/node": "^16.18.24",
     "@types/react": "^18.0.38",
     "@types/react-dom": "^18.0.11",
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.7",
+    "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
@@ -20,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "scss": "sass src/sass/main.scss src/css/main.css --watch"
   },
   "eslintConfig": {
     "extends": [

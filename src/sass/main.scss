@@ -1,0 +1,12 @@
+@import './variables.scss';
+@import './mixins.scss';
+@import './landingpage.scss'; 
+@import './cardcourse';
+@import './listcourses.scss';
+@import './markdowntext.scss';
+@import './footer.scss';
+   
+body{
+    background-color: rgb(47, 45, 45);
+    z-index: -100000000;
+}

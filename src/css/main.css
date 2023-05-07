@@ -1,0 +1,80 @@
+.landing-page-card {
+  min-height: 85vh;
+  background-color: aqua;
+}
+
+.landing-page-img {
+  width: 100vh;
+  height: 50vh;
+  text-align: center;
+}
+
+.landing-page-title {
+  text-align: center;
+  color: aliceblue;
+  z-index: 10000;
+}
+
+.landing-page-button {
+  text-align: center;
+}
+
+.landing-page-option-images {
+  height: 180px;
+}
+
+.option-block {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.option-card-title {
+  color: black;
+}
+
+.card-img-overlay {
+  margin-top: 25vh;
+}
+
+.general-visualisation-list-courses {
+  text-align: -webkit-center;
+}
+
+.cardCategory {
+  margin: 3.5rem;
+  padding-right: 0px;
+}
+
+.single-card-course {
+  display: flex;
+}
+
+.image-course-card {
+  padding-right: inherit;
+}
+
+.nav-link {
+  margin-top: 2%;
+}
+
+.list-courses-text {
+  color: aliceblue;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-around;
+  background-color: rgb(219, 219, 219);
+  min-height: 5vh;
+  margin: 0px;
+}
+
+body {
+  background-color: rgb(47, 45, 45);
+  z-index: -100000000;
+}
+
+/*# sourceMappingURL=main.css.map */
