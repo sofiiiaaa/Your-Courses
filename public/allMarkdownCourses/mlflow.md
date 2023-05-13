@@ -1,8 +1,10 @@
 \pagebreak
 
-<!-- toc -->
-
 # MLFLOW
+
+<!--toc-->
+<!--tocstop-->
+
 I will cover the following topics related to MLflow:
 
     Introduction to MLflow
@@ -22,8 +24,7 @@ MLflow is an open source platform for managing end-to-end machine learning workf
 
 One of the main challenges in machine learning is managing the end-to-end workflow, which includes data preparation, experimentation, model training, and deployment. MLflow aims to address this challenge by providing a unified platform for managing the entire machine learning lifecycle.
 
-MLflow is designed to be agnostic to the underlying machine learning framework or programming language. This means that you can use MLflow with any machine learning framework, such as TensorFlow, PyTorch, or scikit-learn, and any programming language, such as Python, R, or Java.
-2. MLflow Components
+MLflow is designed to be agnostic to the underlying machine learning framework or programming language. This means that you can use MLflow with any machine learning framework, such as TensorFlow, PyTorch, or scikit-learn, and any programming language, such as Python, R, or Java. 2. MLflow Components
 
 MLflow consists of three main components: Tracking, Projects, and Models. Let's take a closer look at each component.
 Tracking
@@ -51,8 +52,7 @@ The Models component of MLflow allows you to manage and version your machine lea
 
 You can use the Models component to log and track the version of your model, and to deploy your model to a variety of platforms, including cloud services and edge devices.
 
-MLflow supports several ways of defining a model, including Python functions, TensorFlow SavedModel, and ONNX. You can use the Models component to version your model and to deploy it to a production environment.
-3. MLflow Use Cases
+MLflow supports several ways of defining a model, including Python functions, TensorFlow SavedModel, and ONNX. You can use the Models component to version your model and to deploy it to a production environment. 3. MLflow Use Cases
 
 MLflow can be used in a variety of machine learning use cases, including:
 Experimentation
@@ -63,8 +63,7 @@ Reproducibility
 MLflow can be used to ensure reproducibility during the development phase of machine learning. You can use the Projects component to package your code and data into a reproducible format, and to run your code in a reproducible environment.
 Deployment
 
-MLflow can be used to deploy machine learning models to a production environment. You can use the Models component to manage and version your models, and to deploy your models to a variety of platforms, including cloud services and edge devices.
-4. Benefits of MLflow
+MLflow can be used to deploy machine learning models to a production environment. You can use the Models component to manage and version your models, and to deploy your models to a variety of platforms, including cloud services and edge devices. 4. Benefits of MLflow
 
 MLflow provides several benefits for managing machine learning workflows, including:
 Unified Platform
@@ -78,8 +77,7 @@ Collaboration
 MLflow provides tools for collaborating on machine learning workflows, which is critical for teams working on machine learning projects. The Tracking component allows you to share experiments with other team members, and to compare the performance of different experiments.
 Flexibility
 
-MLflow is designed to be agnostic to the underlying machine learning framework or programming language. This means that you can use MLflow with any machine learning framework, such as TensorFlow, PyTorch, or scikit-learn, and any programming language, such as Python, R, or Java.
-5. Limitations of MLflow
+MLflow is designed to be agnostic to the underlying machine learning framework or programming language. This means that you can use MLflow with any machine learning framework, such as TensorFlow, PyTorch, or scikit-learn, and any programming language, such as Python, R, or Java. 5. Limitations of MLflow
 
 MLflow has some limitations that you should be aware of, including:
 Learning Curve
@@ -103,14 +101,17 @@ TensorFlow Extended (TFX)
 TensorFlow Extended (TFX) is a platform for building and deploying machine learning pipelines. TFX provides tools for data validation, preprocessing, and model training, and can be used with TensorFlow and other machine learning frameworks.
 
 ## Experiment tracking
+
 MLflow provides a simple and intuitive way to track and manage machine learning experiments, including those involving PyTorch models. By using MLflow's logging and tracking functionality, you can easily keep track of all the important metrics, parameters, and artifacts associated with your experiments. In this section, we will go through a step-by-step guide on how to use MLflow to track PyTorch experiments.
 
 1. Set up the MLflow environment:
 
 Before we can start using MLflow to track our PyTorch experiments, we need to set up the MLflow environment. To do this, we need to install the MLflow library and start an MLflow server. We can install MLflow using pip:
+
 ```
 pip install mlflow
 ```
+
 Once MLflow is installed, we can start the MLflow server using the following command:
 
 ```bash
@@ -120,7 +121,7 @@ mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./
 
 This command starts an MLflow server that listens on port 5000 and stores data in an SQLite database located in the mlflow.db file. The --default-artifact-root option specifies the directory where model artifacts will be stored.
 
-	2. Define the PyTorch model:
+    2. Define the PyTorch model:
 
 Next, we need to define our PyTorch model that we will be using in our experiments. In this example, we will define a simple neural network with one hidden layer:
 
@@ -141,6 +142,7 @@ class Net(nn.Module):
         x = self.fc2(x)
         return x
 ```
+
 This neural network has one input layer with 784 units, one hidden layer with 128 units, and one output layer with 10 units. We will be using this neural network to classify handwritten digits in the MNIST dataset.
 
     Define the PyTorch experiment:
@@ -216,8 +218,6 @@ with torch.no_grad():
     print("Accuracy: {:.2f}%".format(accuracy))
 ```
 
-
-
 In this code, we first start an MLflow run using the `mlflow.start_run()` function. Inside the run, we define the hyperparameters (learning rate, batch size, and number of epochs), the PyTorch model, loss function, and optimizer. We then log the hyperparameters using the `mlflow.log_param()` function and the PyTorch model using the `mlflow.pytorch.log_model()` function.
 
 Next, we train the model using a nested loop over the number of epochs and the data loader. For each batch of images and labels, we perform a forward pass, compute the loss, perform a backward pass, and optimize the model parameters. We then log the loss using the `mlflow.log_metric()` function.
@@ -288,6 +288,7 @@ In this example, we first load the saved model artifact using the mlflow.pytorch
 By using MLflow to save and load model artifacts, we can easily share and reproduce machine learning models across different environments and collaborators.
 
 ## Setup
+
 Setup
 
 First, you'll need to install the MLflow library and import it into your Python script. You'll also need to import any other libraries you plan to use, such as PyTorch for building and training the model.
@@ -404,8 +405,8 @@ By following these steps, you can use MLflow to track everything related to your
 
 Once you've logged your experiment data using the mlflow API, you can view the results and metrics in several ways:
 
-* MLflow UI: The easiest way to view the results and metrics of an MLflow experiment is to use the MLflow UI, which is a web-based user interface that comes with the MLflow package. You can launch the UI by running the mlflow ui command in your terminal, which will open a web browser displaying the UI at http://localhost:5000 by default. From there, you can navigate to your experiment and view its runs, metrics, parameters, and artifacts. You can also filter and compare runs, as well as view the source code and console output for each run.
+- MLflow UI: The easiest way to view the results and metrics of an MLflow experiment is to use the MLflow UI, which is a web-based user interface that comes with the MLflow package. You can launch the UI by running the mlflow ui command in your terminal, which will open a web browser displaying the UI at http://localhost:5000 by default. From there, you can navigate to your experiment and view its runs, metrics, parameters, and artifacts. You can also filter and compare runs, as well as view the source code and console output for each run.
 
-* API: You can also access your experiment data programmatically using the MLflow API. For example, you can use the mlflow.search_runs() function to retrieve a list of runs for a given experiment, and the mlflow.get_run() function to retrieve a specific run. You can then access the run's data using the data attribute, which contains the run's metrics, parameters, tags, and other metadata.
+- API: You can also access your experiment data programmatically using the MLflow API. For example, you can use the mlflow.search_runs() function to retrieve a list of runs for a given experiment, and the mlflow.get_run() function to retrieve a specific run. You can then access the run's data using the data attribute, which contains the run's metrics, parameters, tags, and other metadata.
 
-* CLI: Finally, you can use the MLflow command-line interface (CLI) to view your experiment data. For example, you can use the mlflow experiments list command to list your experiments, and the mlflow runs list command to list the runs for a given experiment. You can also use the mlflow ui command to launch the MLflow UI from the command line.
+- CLI: Finally, you can use the MLflow command-line interface (CLI) to view your experiment data. For example, you can use the mlflow experiments list command to list your experiments, and the mlflow runs list command to list the runs for a given experiment. You can also use the mlflow ui command to launch the MLflow UI from the command line.

@@ -1,8 +1,8 @@
 \pagebreak
 
-<!-- toc -->
-
 # Continuous Integration & Continuous Deployment
+<!--toc-->
+<!--tocstop-->
 
 ## Introduction
 
@@ -13,7 +13,6 @@ Continuous Integration is the practice of automatically building and testing cod
 Continuous Deployment (or Continuous Delivery) is the practice of automatically deploying code changes to production environments after they have been built and tested. This is usually done using automation tools to ensure that code changes are deployed quickly and consistently, while minimizing the risk of errors or downtime.
 
 By implementing CI/CD practices, development teams can improve their software quality, reduce time-to-market, and increase their ability to respond quickly to changing requirements or customer needs. It allows them to deliver software more frequently and reliably, while also minimizing the risks and costs associated with manual processes.
-
 
 ### Continuous Integration
 
@@ -39,16 +38,16 @@ CD helps to reduce the time it takes to deliver software changes to users and in
 
 There are several terms related to CI/CD (Continuous Integration/Continuous Deployment) that are commonly used in software development. Some of the most common terms include:
 
-* Build: The process of compiling source code and linking it to create an executable program or library.
-* Test: The process of verifying that software functions as expected and meets requirements. This may include unit tests, integration tests, performance tests, and other types of tests.
-* Deployment: The process of installing software on a production server or other environment.
-* Pipeline: A series of automated steps that code changes go through, including building, testing, and deploying.
-* Artifact: A package that contains the compiled code, libraries, and other files needed to deploy a software application.
-* Version Control: The process of managing changes to software code over time, including storing and tracking changes, and making it easier to collaborate on code changes.
-* Continuous Integration: The practice of continuously integrating code changes into a shared code repository, and running automated tests to ensure that the changes do not break existing functionality.
-* Continuous Deployment: The practice of automatically deploying code changes to production environments after they have been built and tested.
-* Infrastructure as Code (IaC): The practice of managing infrastructure, such as servers and networks, using code and automation tools.
-* DevOps: The culture and practices that focus on collaboration between software development and IT operations teams, with a focus on automating processes and improving communication and feedback between teams.
+- Build: The process of compiling source code and linking it to create an executable program or library.
+- Test: The process of verifying that software functions as expected and meets requirements. This may include unit tests, integration tests, performance tests, and other types of tests.
+- Deployment: The process of installing software on a production server or other environment.
+- Pipeline: A series of automated steps that code changes go through, including building, testing, and deploying.
+- Artifact: A package that contains the compiled code, libraries, and other files needed to deploy a software application.
+- Version Control: The process of managing changes to software code over time, including storing and tracking changes, and making it easier to collaborate on code changes.
+- Continuous Integration: The practice of continuously integrating code changes into a shared code repository, and running automated tests to ensure that the changes do not break existing functionality.
+- Continuous Deployment: The practice of automatically deploying code changes to production environments after they have been built and tested.
+- Infrastructure as Code (IaC): The practice of managing infrastructure, such as servers and networks, using code and automation tools.
+- DevOps: The culture and practices that focus on collaboration between software development and IT operations teams, with a focus on automating processes and improving communication and feedback between teams.
 
 ##### Pipeline
 
@@ -61,17 +60,17 @@ Once the code changes pass the testing stage, the next stage in the pipeline is 
 The pipeline can be configured to include additional stages such as security scanning and code quality checks. The ultimate goal of a pipeline is to automate the software release process and minimize the time it takes to deliver new features or bug fixes to end-users while ensuring quality and reliability.
 
 ### Dev should know
+
 As a software developer, there are several important things to know about CI/CD (Continuous Integration/Continuous Deployment) to ensure that you can effectively contribute to the software development process:
 
-* Code frequently and commit changes often: Continuous Integration requires developers to commit changes to the shared repository frequently, and ensure that the code compiles and passes automated tests. Therefore, developers should be able to code frequently and ensure that their changes don't break the existing functionality.
-* Write automated tests: Automated testing is a critical part of the CI/CD process, so developers should be proficient in writing unit tests, integration tests, performance tests, and other types of automated tests to validate their changes.
-* Collaborate with other developers: As part of the CI/CD process, developers need to collaborate with their colleagues to ensure that their code changes do not conflict with other changes. This includes communication around code changes, version control, and other aspects of the software development process.
-* Understand the deployment process: Developers should have a good understanding of the deployment process and the tools used in the process, such as build tools, configuration management, and deployment automation tools.
-* Be aware of security and compliance requirements: As part of the CD process, it's important to be aware of any security and compliance requirements that need to be met. Developers should be familiar with security best practices and incorporate them into their code changes.
-* Embrace DevOps culture: CI/CD is part of a broader DevOps culture that emphasizes collaboration, automation, and continuous improvement. Developers should be open to feedback, embrace automation and continuous learning, and work closely with other teams involved in the development and deployment process.
+- Code frequently and commit changes often: Continuous Integration requires developers to commit changes to the shared repository frequently, and ensure that the code compiles and passes automated tests. Therefore, developers should be able to code frequently and ensure that their changes don't break the existing functionality.
+- Write automated tests: Automated testing is a critical part of the CI/CD process, so developers should be proficient in writing unit tests, integration tests, performance tests, and other types of automated tests to validate their changes.
+- Collaborate with other developers: As part of the CI/CD process, developers need to collaborate with their colleagues to ensure that their code changes do not conflict with other changes. This includes communication around code changes, version control, and other aspects of the software development process.
+- Understand the deployment process: Developers should have a good understanding of the deployment process and the tools used in the process, such as build tools, configuration management, and deployment automation tools.
+- Be aware of security and compliance requirements: As part of the CD process, it's important to be aware of any security and compliance requirements that need to be met. Developers should be familiar with security best practices and incorporate them into their code changes.
+- Embrace DevOps culture: CI/CD is part of a broader DevOps culture that emphasizes collaboration, automation, and continuous improvement. Developers should be open to feedback, embrace automation and continuous learning, and work closely with other teams involved in the development and deployment process.
 
 By understanding these key aspects of CI/CD and incorporating them into their work, developers can contribute to a successful software development process that delivers high-quality software to end-users quickly and reliably.
-
 
 ### Dev must know
 
@@ -112,6 +111,7 @@ In an integration test, a developer writes a test case that exercises multiple u
 To summarize, unit tests are used to test individual units of code in isolation, while integration tests are used to test how different units of code work together in the context of the application as a whole. Both types of tests are important for ensuring that software is reliable, robust, and works as intended.
 
 ## Tools
+
 There are many tools available for implementing continuous integration (CI). Here are some of the most popular CI tools:
 
 Jenkins: Jenkins is an open-source automation server that can be used for building, testing, and deploying software. It is one of the most popular CI tools and has a large user community.
@@ -119,20 +119,22 @@ Travis CI: Travis CI is a cloud-based CI tool that supports a wide range of prog
 GitLab CI/CD: GitLab is a code hosting platform that includes built-in CI/CD functionality. It can be used to automate build, test, and deployment processes for code hosted on GitLab.
 
 ### GitLab CI/CD
+
 GitLab CI is a continuous integration and continuous delivery (CI/CD) platform that is built into the GitLab source code management system. It provides a way to automate the build, test, and deployment of code changes, and is designed to be simple to use and flexible enough to support a wide range of workflows and use cases.
 
 Here are some key features and concepts of GitLab CI:
 
-* GitLab Runner: The GitLab Runner is a lightweight agent that runs on your infrastructure and executes jobs defined in your GitLab CI configuration. The runner can be installed on Linux, macOS, or Windows, and can be configured to run in various modes, including shell, Docker, and Kubernetes.
-* Pipelines: A pipeline is a series of stages that define the tasks and jobs that will be executed to build, test, and deploy your code. Pipelines are defined using a YAML file, and can be configured to run automatically when changes are pushed to your GitLab repository.
-* Jobs: A job is a specific task that is executed as part of a pipeline. Jobs can be configured to run in parallel, and can be defined to run on specific runners or tags.
-* Artifacts: Artifacts are files generated by a job, such as compiled code, test results, or build logs. Artifacts can be archived and downloaded from GitLab after a job has completed, allowing developers to inspect and analyze the output of the job.
-* Environments: An environment is a specific deployment target, such as a staging or production server. Environments can be defined in GitLab CI, and jobs can be configured to deploy code changes to specific environments.
-* Integration: GitLab CI integrates with a wide range of other tools and services, such as Jira, Kubernetes, and AWS. This allows you to create a complete CI/CD pipeline that includes source code management, build tools, testing frameworks, and deployment tools.
+- GitLab Runner: The GitLab Runner is a lightweight agent that runs on your infrastructure and executes jobs defined in your GitLab CI configuration. The runner can be installed on Linux, macOS, or Windows, and can be configured to run in various modes, including shell, Docker, and Kubernetes.
+- Pipelines: A pipeline is a series of stages that define the tasks and jobs that will be executed to build, test, and deploy your code. Pipelines are defined using a YAML file, and can be configured to run automatically when changes are pushed to your GitLab repository.
+- Jobs: A job is a specific task that is executed as part of a pipeline. Jobs can be configured to run in parallel, and can be defined to run on specific runners or tags.
+- Artifacts: Artifacts are files generated by a job, such as compiled code, test results, or build logs. Artifacts can be archived and downloaded from GitLab after a job has completed, allowing developers to inspect and analyze the output of the job.
+- Environments: An environment is a specific deployment target, such as a staging or production server. Environments can be defined in GitLab CI, and jobs can be configured to deploy code changes to specific environments.
+- Integration: GitLab CI integrates with a wide range of other tools and services, such as Jira, Kubernetes, and AWS. This allows you to create a complete CI/CD pipeline that includes source code management, build tools, testing frameworks, and deployment tools.
 
 Overall, GitLab CI provides a powerful and flexible platform for automating the build, test, and deployment processes of software development, and its integration with GitLab makes it a popular choice for organizations that use GitLab for source code management.
 
 #### Gitlab runner
+
 A GitLab Runner is a lightweight agent that runs jobs defined in your GitLab CI/CD pipeline. It can be installed on your infrastructure, including Linux, macOS, and Windows, and can be configured to run jobs in a variety of environments, including shell, Docker, and Kubernetes.
 
 The runner listens for jobs that are assigned to it by the GitLab server and runs them on the configured environment. The runner is responsible for pulling the code from the GitLab repository, executing the build and test steps, and sending the results back to the GitLab server.
@@ -142,6 +144,7 @@ GitLab runners can be registered with a specific GitLab instance or can be share
 GitLab Runner is an open-source project and is available for free. It provides a flexible and scalable way to execute your CI/CD pipeline and can be used with a wide range of tools and technologies to build and deploy your code.
 
 #### Gitlab jobs
+
 In the context of GitLab CI/CD, a job is a specific task that is defined in your pipeline. It represents a single unit of work that needs to be performed, such as building your application, running tests, or deploying your code.
 
 A job is defined by a set of instructions that specify how it should be executed, such as what script to run or what Docker image to use. Jobs can be configured to run in parallel or sequentially, and can be dependent on other jobs in the pipeline.
@@ -153,6 +156,7 @@ The output of each job is recorded and can be accessed from the GitLab UI or thr
 In summary, a job is a key concept in GitLab CI/CD that allows you to define the specific tasks that need to be executed as part of your pipeline, and provides a way to automate your build, test, and deployment processes.
 
 #### Basic setup
+
 To set up a GitLab CI/CD pipeline, you will need to define the jobs that you want to run as part of your pipeline and specify how they should be executed. Here are the basic steps for setting up a simple GitLab CI/CD pipeline:
 
 Create a .gitlab-ci.yml file in the root of your repository. This file contains the configuration for your pipeline, including the jobs and the stages they belong to.
@@ -161,11 +165,13 @@ Define the stages for your pipeline. Stages represent the phases of your pipelin
 
 ```md
 stages:
-  - build
-  - test
-  - deploy
+
+- build
+- test
+- deploy
 ```
-  - Define the jobs for each stage. Jobs are the specific tasks that need to be executed as part of each stage. You can define as many jobs as you need, and each job can have its own set of instructions.
+
+- Define the jobs for each stage. Jobs are the specific tasks that need to be executed as part of each stage. You can define as many jobs as you need, and each job can have its own set of instructions.
 
 ```yml
 build:
@@ -183,6 +189,7 @@ deploy:
   script:
     - echo "Deploying the application"
 ```
+
 Configure any additional settings for your pipeline, such as runners, variables, and artifacts. For example, you can specify the runner that should be used to execute your pipeline, define environment variables that should be available to your jobs, and specify artifacts that should be produced by your pipeline.
 
 ```yml
@@ -193,11 +200,13 @@ artifacts:
   paths:
     - build/
 ```
+
 Commit and push your .gitlab-ci.yml file to your repository. This will trigger your pipeline to run automatically.
 
 Monitor the progress of your pipeline in the GitLab UI or through the GitLab API. You can view the status of each job, check the logs for any errors, and access any artifacts that were produced by your pipeline.
 
 #### Docker - k8s integration
+
 GitLab integrates with Docker in several ways. Here are some of the key features:
 
 1. Docker Build: GitLab CI/CD can use the Dockerfile in your repository to build a Docker image of your application, which can then be pushed to a container registry.
@@ -206,6 +215,7 @@ GitLab integrates with Docker in several ways. Here are some of the key features
 4. Kubernetes: GitLab also integrates with Kubernetes, an open-source container orchestration platform. You can use GitLab to manage your Kubernetes clusters and deploy your applications to them. GitLab can even automatically create and manage Kubernetes namespaces for you.
 
 #### Configuration file
+
 Here is an example .gitlab-ci.yml configuration that will run tests and build and publish a Docker image when a commit is made to the master branch:
 
 ```yml
@@ -244,6 +254,7 @@ deploy:
   only:
     - master
 ```
+
 This configuration defines three stages: test, build, and deploy. The variables section defines variables that will be used throughout the pipeline.
 
 In the test stage, tests are run. In the build stage, the Docker image is built and pushed to the registry defined in the DOCKER_REGISTRY variable. This stage only runs when a commit is made to the master branch.
@@ -253,6 +264,7 @@ In the deploy stage, the application is deployed to a production environment, wi
 Note that in order to use this configuration, you will need to have a Dockerfile in the root of your repository that defines how to build the Docker image for your application. You will also need to replace the values for the DOCKER_REGISTRY, DOCKER_IMAGE_TAG, and DOCKER_IMAGE_NAME variables with the appropriate values for your environment.
 
 #### Advanced configuration
+
 or using more advance features: in GitLab CI/CD, rules allow you to define conditions that control when a job is created and whether it is allowed to run. You can use rules to specify when a job runs based on the changes made to the code, the branch or tag that triggered the pipeline, the environment variables, and other factors.
 
 The if statement is a common condition that can be used to specify when a job should run. It allows you to run a job only if a certain condition is met. For example, you can use the if statement to run a job only when a particular environment variable is set or only when the pipeline is triggered by a certain branch.
@@ -290,6 +302,7 @@ notify_slack:
     - slack-notification.sh success
   when: on_success
 ```
+
 In this example, the build job is run automatically when a commit is made to the main branch. The deploy job is also run when a commit is made to the main branch, but it requires manual intervention to start. The notify_slack job is only run when the deploy job succeeds and sends a Slack notification.
 
 #### GitLab CI/CD variables
@@ -307,6 +320,7 @@ Here are some of the most common parameters that can be used in the .gitlab-ci.y
 9. rules: specifies the conditions under which the job should be run, b
 
 #### GitLab CI/CD regular expression
+
 There are many useful regular expressions that you can use in a GitLab CI/CD configuration file. Here are some examples:
 
 `if: $CI_COMMIT_BRANCH =~ /^release-\\d+\\.\\d+$/`: This regular expression matches a branch name that starts with "release-" followed by one or more digits, a dot, and one or more digits, such as "release-1.0" or "release-2.3".
@@ -314,6 +328,7 @@ There are many useful regular expressions that you can use in a GitLab CI/CD con
 `if: $CI_COMMIT_MESSAGE =~ /\\[skip ci\\]/`: This regular expression matches a commit message that contains the phrase "[skip ci]". This is often used to skip running the pipeline for commits that don't require it, such as changes to documentation or comments.
 
 #### Arg `when`
+
 The when parameter in GitLab CI allows you to specify when a job should run. Here are the different options that you can use with the when parameter:
 
 1. on_success: runs the job only when the previous job in the pipeline completes successfully.
@@ -336,6 +351,7 @@ review: for reviewing changes made in a merge request
 You can use these stages as a starting point for your pipeline, or you can define your own custom stages to suit your workflow. For example, you might define a lint stage for running code quality checks, or a package stage for packaging your code for deployment.
 
 #### Arg `script`
+
 In GitLab CI, the script keyword is used to define the commands that should be run for a given job. The script section is where you define the actual steps that your job should perform, such as compiling your code, running tests, or building a Docker image.
 
 The script section should be a list of shell commands that will be executed by the runner. These commands can be as simple or as complex as you need them to be, and can include variables, conditionals, and other shell constructs.
@@ -360,8 +376,8 @@ Artifacts can be defined in the .gitlab-ci.yml file using the artifacts keyword.
 
 Using artifacts in GitLab CI/CD can help you debug your builds and provide transparency into the build process for your team. They can also be useful for keeping a record of build outputs and test results for future reference.
 
-
 #### Gitlab interview
+
 1. What is continuous integration and continuous deployment?
 2. What is a pipeline, and what are the stages in a pipeline?
 3. How can you define a pipeline in GitLab CI using the .gitlab-ci.yml configuration file?
@@ -376,9 +392,8 @@ Using artifacts in GitLab CI/CD can help you debug your builds and provide trans
 
 is also highly scalable, with the ability to manage tens of thousands of servers simultaneously. It's commonly used by DevOps teams and system administrators to automate repetitive tasks and streamline infrastructure management.
 
-
-
 ### Jenkins
+
 Jenkins is an open-source automation server that is used for implementing continuous integration and continuous delivery (CI/CD) pipelines. Here's a high-level overview of how Jenkins works:
 
 1. Configuration: First, you need to install Jenkins and configure it to work with your source code management system, build tools, and testing frameworks. This is done through a web-based interface that allows you to install plugins and set up build jobs.
@@ -387,7 +402,6 @@ Jenkins is an open-source automation server that is used for implementing contin
 4. Notifications: Once the build and testing are complete, Jenkins will generate notifications to alert developers if the build succeeded or failed. If the build fails, Jenkins will send an email notification to the developers responsible for the code changes that caused the build failure.
 5. Integrations: Jenkins can integrate with a wide range of other tools and services, such as GitHub, Jira, and Slack. This allows you to create a complete CI/CD pipeline that includes source code management, build tools, testing frameworks, and deployment tools.
 6. Plug-ins: Jenkins is extensible and has a large ecosystem of plugins that can be used to extend its functionality. There are plugins available for everything from additional build tools to advanced reporting and analysis tools.
-
 
 Jenkins is primarily used through a web-based user interface, but it also supports automation through its REST API and command-line interface (CLI).
 
@@ -398,7 +412,9 @@ However, the Jenkins CLI and REST API can be used to automate common tasks, such
 Overall, the web-based interface is the most common way to use Jenkins, but the CLI and REST API can provide additional flexibility and automation capabilities for advanced use cases.
 
 ## Ansible
+
 ### Introduction
+
 Ansible is an open-source automation tool that allows you to automate the configuration, deployment, and management of IT infrastructure. It provides a simple and powerful way to automate complex tasks, such as application deployment, cloud provisioning, and network management.
 
 Ansible is agentless, meaning it doesn't require any additional software or agents to be installed on remote systems. Instead, Ansible communicates with remote systems over SSH or WinRM, using a set of modules that provide the necessary functionality.
@@ -417,6 +433,7 @@ Here are some common use cases for Ansible:
 Overall, Ansible is a versatile tool that can be used in a wide range of IT environments and scenarios, helping to reduce manual effort, increase efficiency, and improve consistency and reliability.
 
 #### Ansible child example
+
 Imagine you have a toy box with lots of different toys, and you want to organize them in a specific way. You could do it by hand, which would take a long time and be very tiring, or you could use a robot to do it for you. The robot would know exactly how to organize the toys and could do it quickly and easily.
 
 Ansible is like that robot, but for organizing computer systems instead of toys. It helps you to organize and manage lots of different computers, servers, and other devices, so that you don't have to do it all by hand.
@@ -428,6 +445,7 @@ Similarly, if you need to install a new application on a lot of different comput
 In summary, Ansible is a tool that helps you to manage and organize lots of different computers and devices, so that you can save time and effort and get things done more quickly and easily.
 
 #### why ansible
+
 If you have an application that needs to be installed, configured, and managed on multiple servers or machines, Ansible can be a great tool to help you automate those tasks.
 
 For example, let's say you have a web application that you want to deploy to a production environment, which consists of multiple servers. Without Ansible, you would need to manually install and configure the application on each server, which would be time-consuming and error-prone.
@@ -438,21 +456,21 @@ Ansible can also help you manage the application after deployment, such as monit
 
 Overall, Ansible can be a valuable tool for any developer or system administrator who needs to manage applications or infrastructure across multiple servers, and wants to do it efficiently, reliably, and at scale.
 
-
 ### Common terms
 
-* Playbook: A YAML file that defines a set of tasks to be executed on a group of hosts.
-* Task: A single unit of work to be performed on a host, such as installing a package, copying a file, or executing a command.
-* Role: A collection of tasks and files that can be reused across multiple playbooks.
-* Inventory: A file that lists the hosts to be managed by Ansible and their properties, such as IP address, hostname, and group membership.
-* Module: A unit of code that performs a specific task, such as managing files, packages, users, or services.
-* Fact: A piece of information about a host, such as its hostname, IP address, or operating system, that Ansible gathers automatically.
-* Handler: A task that is triggered by another task, such as restarting a service after it has been configured.
-* Vault: A secure storage mechanism for storing sensitive data, such as passwords or API keys, in encrypted form.
-* Ad hoc command: A one-line command that performs a single task on one or more hosts, such as pinging a host or checking the status of a service.
-* Play: A set of tasks that are executed on a single host, as opposed to a playbook, which is executed on a group of hosts.
+- Playbook: A YAML file that defines a set of tasks to be executed on a group of hosts.
+- Task: A single unit of work to be performed on a host, such as installing a package, copying a file, or executing a command.
+- Role: A collection of tasks and files that can be reused across multiple playbooks.
+- Inventory: A file that lists the hosts to be managed by Ansible and their properties, such as IP address, hostname, and group membership.
+- Module: A unit of code that performs a specific task, such as managing files, packages, users, or services.
+- Fact: A piece of information about a host, such as its hostname, IP address, or operating system, that Ansible gathers automatically.
+- Handler: A task that is triggered by another task, such as restarting a service after it has been configured.
+- Vault: A secure storage mechanism for storing sensitive data, such as passwords or API keys, in encrypted form.
+- Ad hoc command: A one-line command that performs a single task on one or more hosts, such as pinging a host or checking the status of a service.
+- Play: A set of tasks that are executed on a single host, as opposed to a playbook, which is executed on a group of hosts.
 
 ### Playbook
+
 In Ansible, a playbook is a file containing a set of instructions that define a set of tasks to be executed on one or more remote hosts. Playbooks are written in YAML format and can include multiple plays, each of which consists of one or more tasks.
 
 Each task in a playbook is a single action, such as installing a package, copying a file, or starting a service. Tasks are executed in the order they appear in the playbook, and Ansible will report on the success or failure of each task.
@@ -465,10 +483,9 @@ Here is a simpler example:
 
 Suppose you have two servers named "webserver1" and "webserver2", and you want to install the Apache web server on both of them. Here is what your playbook might look like:
 
-
 ```yaml
 - name: Install Apache on webservers
-  hosts: 
+  hosts:
     - webserver1
     - webserver2
   become: true
@@ -477,7 +494,6 @@ Suppose you have two servers named "webserver1" and "webserver2", and you want t
       yum:
         name: httpd
         state: latest
-
 ```
 
 This playbook has a single play that targets the two hosts specified in the hosts section. We then use the become keyword to become a privileged user on the target hosts (i.e., a user with sudo or root permissions).
@@ -491,6 +507,7 @@ In an Ansible playbook, the yum module can be used to manage packages on remote 
 In an Ansible playbook, you can use the httpd package to install the Apache HTTP Server on a Linux system, and then use the service module to start, stop, or restart the server.
 
 ### Server connections
+
 o connect to "webserver1" and "webserver2" using Ansible, you need to specify the IP addresses or hostnames of these servers in your inventory file. The inventory file is a text file that lists the servers that Ansible should manage, along with any groupings and variables that are associated with them.
 
 Here's an example of how you can define the inventory file for your servers:
@@ -520,10 +537,6 @@ In this example, the task is named "Install Apache package" and uses the apt mod
 
 Tasks can be grouped together into a playbook, which is a collection of tasks that are executed in order on one or more remote hosts. By defining tasks in a playbook, you can automate complex workflows and manage your infrastructure more efficiently.
 
-
-
-
-
 # Udemy
 
 ## Introduction
@@ -541,7 +554,7 @@ stages:
 	- build
 	- test
 	- deploy
-	
+
 build_webisite:
 	stage: build
 	scripts:
@@ -556,7 +569,7 @@ test_artifact:
 	stage: test
 	script:
 		- pytest .
-		
+
 test_artifact_v2:
 	image: alpine:latest
 	stage: test
@@ -572,6 +585,7 @@ deploy_to_n:
 Is possible to access the `artifacts` frm the gitlab UI (on the left of the run). In this case the test_v0 and v2 will be runned in parallel.
 
 Each pipelines return an exit status:
+
 - 0 if job succeedeed
 - 1-255 if failed
 
@@ -593,11 +607,10 @@ if you do not add the stage to a job it will be automaticaly added to the `test`
 
 In gitlab is possible to specify secrets to be passed to the pipelines `Settings -> CI/CD -> Variables.`
 
-
 ### Gitlab-CI fundamentals:
 
 - Predefined variables:
-	https://docs.gitlab.com/ee/ci/variables/predefined_variables.html
+  https://docs.gitlab.com/ee/ci/variables/predefined_variables.html
 
 Is possible to access those variables usign "$CI_COMMIT_BRANCH".
 
@@ -611,15 +624,15 @@ image: node:latest  # default images for all steps if not overwritten
 stages:
 	- build
 	- test
-	
+
 # we are caching globally the node_modules.
 cache:
 	key: ${CI_COMMIT_REF_SLUF}
-	paths: 
+	paths:
 		- node_modules/
-			
+
 build_webisite:
-	stage: build			
+	stage: build
 	scripts:
 		- npm install
 		- npm build
@@ -632,7 +645,7 @@ test_artifact:
 	stage: test
 	script:
 		- pytest .
-		
+
 ```
 
 some syntax:
@@ -665,7 +678,6 @@ paths: A list of file paths or patterns that should be cached. The files or dire
 
 policy: The caching policy to use. The default policy is pull-push, which means that the runner will try to first pull the cache from a previous job, and if it doesn't exist, it will push the cache for future jobs to use. Other options include pull, which only tries to pull the cache, and push, which only tries to push the cache.
 
-
 ### Deployment enviroments
 
 we can tag our jobs and gitlab will keep tracks of everything in each enviroments. To do that we have to add the environmet argument into the job definition eg:
@@ -680,9 +692,9 @@ deploy_production:
 		- echo do prod
 ```
 
-
 ### Define variables
-is possible to define variable into the UI of gitlab but also directly in the yaml files. 
+
+is possible to define variable into the UI of gitlab but also directly in the yaml files.
 
 ```yml
 variables:
@@ -700,7 +712,7 @@ deploy_production:
 		url: "me"
 	scripts:
 		- echo do prod
-		
+
 	allow_failures: false
 	when:
 		manual
@@ -724,7 +736,6 @@ Sometimes we can use them to install the predefined packages and dependecies nee
 
 Artifacts are typically used to pass data between jobs, store build artifacts for later use, or to provide build output to users. Cache, on the other hand, is used to speed up builds by reusing previously generated files. By using both artifacts and cache, you can speed up your build process and improve the overall performance of your pipelines.
 
-
 ## YAML
 
 yaml is very similar to JSON.
@@ -739,6 +750,7 @@ to disable jobs you can put a `.` in front of the job:
 ```
 
 ### Anchors
+
 is a way to define variable to reuse them around.
 
 ```
@@ -748,7 +760,7 @@ test_artifact:
 	script:
 		- pytest .
 	script: echo *image
-		
+
 ```
 
 we can anchor also an objects:
@@ -757,13 +769,13 @@ we can anchor also an objects:
 base_person: &base
 	city: nyc
 	country: usa
-	
+
 person:
 	<<: *base
 	name: gg
 ```
 
-in this situation person hereditate the keys from `base_person`. It helps avoid replication. 
+in this situation person hereditate the keys from `base_person`. It helps avoid replication.
 
 ### Job templates
 
@@ -778,141 +790,10 @@ We have to create anchors also per the `job templates`.
 .deploy_template: &deploy
 	stage: deploy
 	scripts: deploy to $DOMAIN
-	
+
 deploy producton:
 	<<: *deploy
-	variables: 
+	variables:
 		DOMAIN: $PRODUCTION_DOMAIN
 
 ```
-
-## ATOKAA
-```
-.rules-inner-merge-request-run-be-tests: &rules-inner-merge-request-run-be-tests
-  if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
-  changes:
-    - .coveragerc
-    - .dockerignore
-    - .gitlab-ci.yml
-    - .test_durations
-    - poetry.lock
-    - pyproject.toml
-    - '*.py'
-    - '*.cfg'
-    - 'atoka*/**/*'
-    - 'ak*/**/*'
-    - 'ci/**/*'
-    - "*/**/*.{py,html,json,txt,csv,xslx,yaml,yml,sh,txt,po}"
-  when: on_success
-```
-
-The code you provided is a YAML file that defines a set of rules for a GitLab CI/CD pipeline. The rules specify conditions under which certain jobs should run.
-
-The "changes" section in this code refers to the files that should trigger the job when they are modified. The "if" section specifies that the job should only run if the pipeline source is a merge request event. Finally, the "when" section specifies that the job should run on successful completion of the previous job.
-
-Overall, this set of rules defines a job that will run only when certain files are modified in a merge request event, and will only run after the previous job has successfully completed.
-
-```
-post-deploy:find-addon-and-fs-orphans:
-  image: pimento:latest
-  stage: post-deploy
-  script:
-    - pim k8s command atoka/atoka-revenge/${ENVIRONMENT} -- python manage.py find_addon_and_fs_orphans
-  tags:
-    - pimento
-  rules:
-    - *rules-inner-skip-build
-    - !reference [.template-run-on-develop-or-main, rules]
-```
-
-The key difference between !reference and aliases is that aliases are used to define custom names for values or objects within the same file, while !reference is used to reference values or objects that are defined elsewhere in the same or different files.
-
-it takes the `rules` from `.template-run-on-develop-or-main`.
-
-```
-
-.django-test-base:
-  extends: .rules-python-tests
-  stage: test
-  variables:
-    DJANGO_SETTINGS_MODULE: atoka.settings.ci
-    RDS_HOSTNAME: pg
-    STORAGE_ENGINE: pg
-    POSTGRES_DB: atoka
-    POSTGRES_USER: atoka
-    POSTGRES_PASSWORD: atoka
-    REDIS_HOSTNAME: redis
-  services:
-    - alias: pg
-      name: postgres:13-alpine
-      command: ["postgres", "-c", "fsync=off", "-c", "synchronous_commit=off", "-c", "full_page_writes=off"]
-    - alias: redis
-      name: docker.io/redis:4.0-alpine
-  image: ${CI_REGISTRY_IMAGE}:${CI_PIPELINE_IID}-django
-  script:
-    - cp -R /home/user/code/locale .
-    - ci/script/django_test.sh
-  tags:
-    - k8s
-  artifacts:
-    reports:
-      junit: reports/tests.xml
-    expire_in: 1 weeks
-  needs:
-    - build:django
-  timeout: 15m
-```
-
-
-- extends: .rules-python-tests: This job extends a previously defined job named .rules-python-tests. This means that the current job inherits all the attributes of the parent job, and can override or add new attributes.
-
-- stage: test: This job is part of the test stage, which means it will run after jobs in the build stage are completed.
-
-- variables: This section defines environment variables that will be used during the job execution. In this case, it sets the DJANGO_SETTINGS_MODULE to atoka.settings.ci, and defines some other variables related to the PostgreSQL and Redis services that will be used by the job.
-
-- services: This section defines Docker containers that will be started as services and made available to the current job. In this case, it starts a PostgreSQL container and a Redis container, and assigns aliases pg and redis to them, respectively.
-
-- image: This specifies the Docker image to use for the job. It uses a dynamic image tag constructed from the GitLab CI/CD variables CI_REGISTRY_IMAGE and CI_PIPELINE_IID.
-
-- script: This section defines the commands to run during the job execution. It copies the locale directory and runs a shell script django_test.sh located in ci/script directory.
-
-- tags: This section specifies the runner tags required to run this job. In this case, the job requires a runner with the k8s tag.
-
-- artifacts: This section defines the files to be collected as job artifacts and the time for which they will be retained.
-
-- needs: This section defines dependencies for the job. In this case, it requires the job named build:django to be completed before this job can start.
-
-- timeout: This specifies the maximum time allowed for the job execution. If the job exceeds this time, it will be canceled.
-
-```
-.rules-skip-e2e-tests:
-  rules:
-    - *rules-inner-skip-build
-    - *rules-inner-skip-tests
-    - if: '$CI_MERGE_REQUEST_IID && $CI_MERGE_REQUEST_LABELS !~ /run-e2e/'
-      when: never
-    - when: on_success
-```
-
-
-The job will follow two other rules, "*rules-inner-skip-build" and "*rules-inner-skip-tests". These rules may be defined elsewhere in the GitLab CI/CD configuration.
-
-The job will be skipped if the pipeline is triggered by a merge request (as indicated by the presence of the "$CI_MERGE_REQUEST_IID" environment variable), and if the merge request does not have a label called "run-e2e" (as indicated by the negative regex match in "$CI_MERGE_REQUEST_LABELS !~ /run-e2e/'"). In other words, if the merge request doesn't require the "run-e2e" tests to be run, the job will be skipped.
-
-If the job is not skipped due to the above conditions, it will run "when: on_success", which means it will run only if the previous job in the pipeline has succeeded.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

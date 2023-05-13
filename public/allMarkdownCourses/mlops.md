@@ -1,9 +1,12 @@
 \pagebreak
 
-<!-- toc -->
-
 # MLOps
+
+<!--toc-->
+<!--tocstop-->
+
 ## Introduction
+
 MLOps (Machine Learning Operations) is a set of practices and tools that focus on the deployment, monitoring, and management of machine learning models in production. MLOps brings together the principles of DevOps (software development operations) and machine learning to help organizations deploy and manage machine learning models at scale.
 
 As a data scientist, you are likely familiar with the process of building and training machine learning models. However, the deployment and maintenance of these models in production can be challenging. MLOps helps to bridge this gap by providing a set of tools and practices to support the entire machine learning development lifecycle, including data preparation, model training, deployment, and monitoring.
@@ -24,14 +27,14 @@ By using MLOps, organizations can improve the efficiency and reliability of thei
 
 MLOps (Machine Learning Operations) is a complex field that draws on a variety of related concepts and technologies. Here are some of the key terms and concepts related to MLOps:
 
-* DevOps: MLOps is an extension of DevOps, which is a set of practices and tools that aim to automate and streamline the software development lifecycle.
-* Continuous Integration/Continuous Deployment (CI/CD): This refers to the process of automating the building, testing, and deployment of software.
-* Infrastructure as Code (IaC): IaC is the process of managing and provisioning infrastructure through code rather than manually configuring servers and other components.
-* Docker and Kubernetes: These are popular containerization technologies that allow developers to package and deploy applications in a consistent and reproducible way.
-* Cloud Computing: MLOps typically involves deploying and managing machine learning models on cloud computing platforms, such as AWS, Google Cloud, and Microsoft Azure.
-* Data Engineering: This involves managing, cleaning, and transforming large volumes of data to prepare it for use in machine learning models.
-* Model Management: This refers to the process of tracking, versioning, and deploying machine learning models in production.
-* Model Monitoring: This involves tracking the performance of machine learning models in production to ensure that they continue to meet performance and accuracy requirements.
+- DevOps: MLOps is an extension of DevOps, which is a set of practices and tools that aim to automate and streamline the software development lifecycle.
+- Continuous Integration/Continuous Deployment (CI/CD): This refers to the process of automating the building, testing, and deployment of software.
+- Infrastructure as Code (IaC): IaC is the process of managing and provisioning infrastructure through code rather than manually configuring servers and other components.
+- Docker and Kubernetes: These are popular containerization technologies that allow developers to package and deploy applications in a consistent and reproducible way.
+- Cloud Computing: MLOps typically involves deploying and managing machine learning models on cloud computing platforms, such as AWS, Google Cloud, and Microsoft Azure.
+- Data Engineering: This involves managing, cleaning, and transforming large volumes of data to prepare it for use in machine learning models.
+- Model Management: This refers to the process of tracking, versioning, and deploying machine learning models in production.
+- Model Monitoring: This involves tracking the performance of machine learning models in production to ensure that they continue to meet performance and accuracy requirements.
 
 ### MLOps vs. DevOps
 
@@ -39,14 +42,15 @@ MLOps (Machine Learning Operations) is a specialized application of DevOps (Deve
 
 Here are some of the key differences between MLOps and DevOps:
 
-* Data Science vs. Software Development: MLOps teams typically include data scientists and machine learning engineers, who work with large datasets and complex models, whereas DevOps teams are typically made up of software developers and operations professionals who work with code and infrastructure.
-* Model Management and Monitoring: In MLOps, there is a greater focus on model management and monitoring to ensure that machine learning models are performing accurately and are up-to-date. In DevOps, the focus is more on continuous delivery and deployment of software applications.
-* Infrastructure and Tools: MLOps teams use a different set of tools and infrastructure than DevOps teams. MLOps teams may use specialized tools for data processing, model training, and model deployment, whereas DevOps teams may use more general-purpose tools for software development, testing, and deployment.
-* Performance and Accuracy: The performance and accuracy of machine learning models are critical to the success of MLOps, whereas in DevOps, the focus is on delivering software that meets user needs and is free from defects.
+- Data Science vs. Software Development: MLOps teams typically include data scientists and machine learning engineers, who work with large datasets and complex models, whereas DevOps teams are typically made up of software developers and operations professionals who work with code and infrastructure.
+- Model Management and Monitoring: In MLOps, there is a greater focus on model management and monitoring to ensure that machine learning models are performing accurately and are up-to-date. In DevOps, the focus is more on continuous delivery and deployment of software applications.
+- Infrastructure and Tools: MLOps teams use a different set of tools and infrastructure than DevOps teams. MLOps teams may use specialized tools for data processing, model training, and model deployment, whereas DevOps teams may use more general-purpose tools for software development, testing, and deployment.
+- Performance and Accuracy: The performance and accuracy of machine learning models are critical to the success of MLOps, whereas in DevOps, the focus is on delivering software that meets user needs and is free from defects.
 
 Despite these differences, there is significant overlap between MLOps and DevOps, and many of the same principles and tools are used in both. By adopting MLOps practices and integrating them with existing DevOps workflows, organizations can improve the efficiency and effectiveness of their machine learning deployments.
 
 ## DevOps for Data Science
+
 DevOps for data science is the practice of applying DevOps principles and practices to the process of developing, deploying, and managing data science and machine learning applications. DevOps for data science involves integrating data science and machine learning models into the software development lifecycle, from code development to deployment and monitoring.
 
 ### Continuous Integration
@@ -66,9 +70,9 @@ Continuous Deployment (CD) is a software development practice that involves auto
 In a typical CD setup, code changes are automatically built, tested, and packaged into a release artifact, which is then deployed to a staging or production environment. The deployment process is typically automated, using tools such as configuration management and deployment automation tools like Ansible, Terraform or Kubernetes.
 
 Once the code changes are deployed to the production environment, they are monitored to ensure that they are functioning as expected. If any issues arise, they can be quickly identified and resolved using tools such as monitoring and logging systems.
- 
 
 ### Infrastructure as Code (IaC)
+
 Infrastructure as Code (IaC) is a practice of managing and provisioning computing infrastructure through machine-readable definition files, rather than through manual configuration. IaC involves defining the infrastructure required to support an application, such as virtual machines, networks, storage, and security policies, in a declarative way using code.
 
 The code used in IaC typically takes the form of configuration files that describe the desired state of the infrastructure, as opposed to scripts that perform specific actions to achieve that state. These configuration files can be version-controlled, tested, and shared like any other code. IaC tools then use this code to provision, configure, and manage the infrastructure automatically.
@@ -84,7 +88,6 @@ With IaC, instead of someone manually clicking buttons and typing commands to se
 The recipe for a cake might include ingredients like flour, eggs, and sugar, and instructions for how to mix them together and bake them in the oven. The recipe for IaC includes things like virtual machines, networks, and storage, and instructions for how to set them up and manage them automatically.
 
 Just like how you can follow a recipe to make a cake, people can use IaC to create and manage computers and other technology quickly and easily.
-
 
 an example of how IaC could be used to set up and manage a simple web application.
 
@@ -121,16 +124,17 @@ Model management is an important aspect of MLOps that involves tracking and mana
 
 In a typical MLOps workflow, model management involves several key steps:
 
-* Model Versioning: Machine learning models can be versioned, just like software code. Each new version of a model should be tracked and tagged with a unique identifier. This allows data scientists to easily revert to a previous version if needed.
-* Model Storage: The trained machine learning models should be stored in a secure and scalable location. This could be a cloud-based object storage service like Amazon S3 or a model registry like MLflow.
-* Model Catalog: A model catalog is a centralized repository that stores metadata about each version of the model, such as its training data, hyperparameters, evaluation metrics, and any relevant documentation. This allows data scientists to easily search and compare different models.
-* Model Serving: This refers to the process of running a trained machine learning model in a production environment to provide predictions or recommendations to end-users. Model serving can be accomplished in a variety of ways, such as real-time API endpoints or batch processing jobs.
-* Model Monitoring: Once a model is deployed, it's important to monitor its performance and usage to ensure that it's delivering the expected results. This includes monitoring prediction accuracy, resource utilization, and any drift in the data over time.
-* Model Explanability: As machine learning models become more complex, it can be difficult to understand why they make the predictions or recommendations they do. Model explainability involves techniques for interpreting and understanding the decisions made by a machine learning model. This is particularly important in regulated industries, such as healthcare or finance.
-* Model Retraining: As new data becomes available, it may be necessary to retrain the model to keep it up-to-date and accurate. This could involve using a combination of automatic and manual retraining, depending on the use case.
-* Model Auditing: Model auditing involves performing regular reviews of machine learning models to ensure that they are still providing accurate and unbiased predictions. This is particularly important in industries where decisions based on machine learning models can have significant consequences, such as healthcare or finance.
+- Model Versioning: Machine learning models can be versioned, just like software code. Each new version of a model should be tracked and tagged with a unique identifier. This allows data scientists to easily revert to a previous version if needed.
+- Model Storage: The trained machine learning models should be stored in a secure and scalable location. This could be a cloud-based object storage service like Amazon S3 or a model registry like MLflow.
+- Model Catalog: A model catalog is a centralized repository that stores metadata about each version of the model, such as its training data, hyperparameters, evaluation metrics, and any relevant documentation. This allows data scientists to easily search and compare different models.
+- Model Serving: This refers to the process of running a trained machine learning model in a production environment to provide predictions or recommendations to end-users. Model serving can be accomplished in a variety of ways, such as real-time API endpoints or batch processing jobs.
+- Model Monitoring: Once a model is deployed, it's important to monitor its performance and usage to ensure that it's delivering the expected results. This includes monitoring prediction accuracy, resource utilization, and any drift in the data over time.
+- Model Explanability: As machine learning models become more complex, it can be difficult to understand why they make the predictions or recommendations they do. Model explainability involves techniques for interpreting and understanding the decisions made by a machine learning model. This is particularly important in regulated industries, such as healthcare or finance.
+- Model Retraining: As new data becomes available, it may be necessary to retrain the model to keep it up-to-date and accurate. This could involve using a combination of automatic and manual retraining, depending on the use case.
+- Model Auditing: Model auditing involves performing regular reviews of machine learning models to ensure that they are still providing accurate and unbiased predictions. This is particularly important in industries where decisions based on machine learning models can have significant consequences, such as healthcare or finance.
 
-### Versioning 
+### Versioning
+
 When it comes to version control for machine learning models, you should version everything that goes into producing the model, including the code, data, and configuration files. This helps you keep track of changes to the model over time and enables you to reproduce the exact same results at any point in the future.
 
 Specifically, you should version:
@@ -144,6 +148,7 @@ Configuration files: Configuration files are used to set the hyperparameters, en
 By versioning everything that goes into producing the model, you can easily reproduce the exact same model and results in the future, even if the data or code have changed. This is essential for maintaining reproducibility and consistency in your machine learning workflows.
 
 ### Registry
+
 A model registry is a central repository for storing trained machine learning models and their associated metadata, such as version numbers, training data, hyperparameters, and evaluation metrics. The registry serves as a catalog of all the models that have been trained in a project, making it easy to find, track, and manage different versions of the same model.
 
 In the context of MLOps, a model registry is an important component of the model management pipeline. When a model is trained, it is typically saved as a file or serialized object, along with its associated metadata. The model file and metadata are then uploaded to the model registry, which stores them in a way that makes it easy to retrieve and deploy the model later.
@@ -152,21 +157,20 @@ In addition to storing models and metadata, a model registry can also provide ot
 
 Some examples of popular model registry tools include MLflow, Kubeflow, and Amazon SageMaker Model Registry. These tools provide a convenient way to store and manage models in a production environment, making it easier to track changes and deploy models to different environments.
 
-
 #### Metadata
+
 The metadata associated with a trained machine learning model that is typically stored in a model registry can vary depending on the specific requirements of a project or organization. However, some common metadata that is often included are:
 
-* Model version: A unique identifier for the specific version of the model that was trained.
-* Training data: Information about the dataset used to train the model, including any preprocessing or feature engineering steps that were taken.
-* Hyperparameters: The values of the parameters used to configure the model during training, such as learning rate, number of hidden layers, and activation functions.
-* Evaluation metrics: Information about the performance of the model on the training, validation, and test datasets, such as accuracy, precision, recall, and F1 score.
-* Model artifacts: The file or serialized object that contains the trained model itself, which can be used to make predictions on new data.
-* Framework or library used: The name and version of the machine learning framework or library that was used to train the model, such as TensorFlow or PyTorch.
-* Training environment: Information about the computing resources used to train the model, such as the type and number of CPUs or GPUs, and the amount of memory.
-* Author: The name or ID of the person or team that created the model, along with any relevant contact information.
+- Model version: A unique identifier for the specific version of the model that was trained.
+- Training data: Information about the dataset used to train the model, including any preprocessing or feature engineering steps that were taken.
+- Hyperparameters: The values of the parameters used to configure the model during training, such as learning rate, number of hidden layers, and activation functions.
+- Evaluation metrics: Information about the performance of the model on the training, validation, and test datasets, such as accuracy, precision, recall, and F1 score.
+- Model artifacts: The file or serialized object that contains the trained model itself, which can be used to make predictions on new data.
+- Framework or library used: The name and version of the machine learning framework or library that was used to train the model, such as TensorFlow or PyTorch.
+- Training environment: Information about the computing resources used to train the model, such as the type and number of CPUs or GPUs, and the amount of memory.
+- Author: The name or ID of the person or team that created the model, along with any relevant contact information.
 
 These metadata can help to provide context and ensure reproducibility when deploying the model in a production environment. Additionally, other metadata may be useful depending on the specific needs of the project or organization, such as compliance or regulatory requirements.
-
 
 ### Model Catalog
 
@@ -202,8 +206,6 @@ In some cases, model serving can also involve the use of model interpretability 
 
 Kubernetes and its ecosystem, such as Kubeflow, can be used for deploying and managing machine learning models at scale, which includes model serving. Using Kubernetes for model serving offers benefits such as automated scaling, fault tolerance, and efficient resource utilization. In addition, there are specialized tools and platforms available that can facilitate model serving, such as Amazon SageMaker, Google Cloud AI Platform, and Microsoft Azure Machine Learning.
 
-
-
 ## Model Monitoring
 
 In MLOps, model monitoring is the practice of tracking and analyzing the performance of machine learning models in production. The purpose of model monitoring is to ensure that the models are behaving as expected, and to detect any issues that could impact their accuracy or reliability over time.
@@ -214,10 +216,10 @@ Model monitoring can be achieved using a combination of techniques, such as log 
 
 Some common techniques used for model monitoring include:
 
-* Automated testing: This involves using automated tests to compare the model's predictions with the expected outputs, to identify any discrepancies.
-* Real-time monitoring: This involves monitoring the model's performance in real-time, to detect any changes in behavior or data drift.
-* Logging and analysis: This involves capturing logs of the model's performance and analyzing the data to identify any trends or issues.
-* Visualization: This involves using data visualization techniques to present the performance data in a way that is easy to understand and interpret.
+- Automated testing: This involves using automated tests to compare the model's predictions with the expected outputs, to identify any discrepancies.
+- Real-time monitoring: This involves monitoring the model's performance in real-time, to detect any changes in behavior or data drift.
+- Logging and analysis: This involves capturing logs of the model's performance and analyzing the data to identify any trends or issues.
+- Visualization: This involves using data visualization techniques to present the performance data in a way that is easy to understand and interpret.
 
 In practice, model monitoring in MLOps involves collecting data from various sources, such as the production environment where the model is being used, and comparing it with the expected behavior of the model. This can include monitoring data input, output, and feedback from users or other systems that interact with the model.
 
@@ -225,10 +227,10 @@ To implement model monitoring, you can use various tools and techniques, includi
 
 Some specific examples of model monitoring in MLOps include:
 
-* Setting up automated tests to check the model's accuracy, speed, and other performance metrics on an ongoing basis.
-* Monitoring the inputs and outputs of the model to ensure they match expected patterns and distributions.
-* Analyzing the feedback from users or other systems to detect anomalies or unexpected behavior of the model.
-* Tracking the model's usage and performance over time to identify changes or trends that could impact its effectiveness.
+- Setting up automated tests to check the model's accuracy, speed, and other performance metrics on an ongoing basis.
+- Monitoring the inputs and outputs of the model to ensure they match expected patterns and distributions.
+- Analyzing the feedback from users or other systems to detect anomalies or unexpected behavior of the model.
+- Tracking the model's usage and performance over time to identify changes or trends that could impact its effectiveness.
 
 ### Model Monitoring Tools
 
@@ -239,10 +241,9 @@ There are several tools available for model monitoring in MLOps. Here are a few 
 3. TensorBoard: A tool provided by TensorFlow that can be used for monitoring model training and validation. It provides visualizations of metrics such as loss, accuracy, and gradients, and can be used to track model performance over time.
 4. MLflow: An open-source platform for the complete machine learning lifecycle that includes model monitoring capabilities. It can be used to track model performance metrics and generate alerts when model performance falls outside of defined thresholds.
 
-
 ## Cloud Computing
 
- Cloud computing is a key enabler of MLOps, providing the infrastructure and resources necessary to support the end-to-end machine learning pipeline. There are several ways in which cloud computing can support MLOps:
+Cloud computing is a key enabler of MLOps, providing the infrastructure and resources necessary to support the end-to-end machine learning pipeline. There are several ways in which cloud computing can support MLOps:
 
 1. Elastic and scalable infrastructure: Cloud computing provides a flexible and scalable infrastructure that can easily be adjusted to accommodate the changing requirements of machine learning workloads. Cloud providers offer a wide range of compute, storage, and networking resources that can be provisioned on-demand, allowing organizations to scale up and down their infrastructure as needed.
 2. Pre-built machine learning services: Many cloud providers offer pre-built machine learning services, such as AWS SageMaker, Azure Machine Learning, and Google Cloud AI Platform, that provide a high-level abstraction layer for managing the machine learning pipeline, including data preparation, model training, and deployment. These services can help streamline the development process and rece the time to market for machine learning applications.
@@ -270,15 +271,16 @@ By using these AWS services and tools, developers can create powerful and scalab
 
 Kubernetes is an open-source container orchestration platform that provides features like automatic scaling, self-healing, and service discovery. It has become the de facto standard for deploying and managing containerized applications, including machine learning applications. Kubernetes provides a powerful platform for MLOps by enabling teams to deploy and manage machine learning models in a scalable and reproducible manner. Here are some key benefits of using Kubernetes for MLOps:
 
-* Scalability: Kubernetes provides automatic scaling of resources based on usage patterns. This makes it easy to handle increasing demand for machine learning models without the need for manual intervention.
-* Resource Management: Kubernetes provides powerful resource management capabilities, allowing MLOps teams to allocate resources to different applications and services in a fine-grained manner.
-* Containerization: Kubernetes uses containers to package and deploy applications, including machine learning models. Containerization makes it easy to move applications between environments and ensures that they run consistently across different platforms.
-* Fault Tolerance: Kubernetes provides self-healing capabilities, meaning that it can automatically detect and recover from failures, ensuring that machine learning models are always available.
-* Service Discovery: Kubernetes provides a built-in service discovery mechanism that makes it easy for applications to discover and communicate with other services.
+- Scalability: Kubernetes provides automatic scaling of resources based on usage patterns. This makes it easy to handle increasing demand for machine learning models without the need for manual intervention.
+- Resource Management: Kubernetes provides powerful resource management capabilities, allowing MLOps teams to allocate resources to different applications and services in a fine-grained manner.
+- Containerization: Kubernetes uses containers to package and deploy applications, including machine learning models. Containerization makes it easy to move applications between environments and ensures that they run consistently across different platforms.
+- Fault Tolerance: Kubernetes provides self-healing capabilities, meaning that it can automatically detect and recover from failures, ensuring that machine learning models are always available.
+- Service Discovery: Kubernetes provides a built-in service discovery mechanism that makes it easy for applications to discover and communicate with other services.
 
 MLOps teams can use Kubernetes to deploy and manage machine learning models in a scalable and reproducible manner. Kubernetes provides a flexible and powerful platform for MLOps, allowing teams to easily manage resources, handle increasing demand, and ensure fault tolerance. Additionally, Kubernetes can be integrated with other MLOps tools and technologies, such as Kubeflow, to provide a complete solution for machine learning operations in the cloud.
 
 ## Kubeflow
+
 Kubeflow is an open-source platform for machine learning orchestration that is designed to run on Kubernetes. It provides a set of tools and abstractions to simplify the process of building, training, and deploying machine learning models in a scalable and reproducible manner. Here are some key components of Kubeflow for MLOps:
 
 1. Jupyter Notebooks: Kubeflow includes Jupyter notebooks that allow data scientists to develop and test their machine learning models. Jupyter notebooks provide an interactive development environment that allows for experimentation and visualization of data.
@@ -302,9 +304,8 @@ The Model Registry also provides a REST API that can be used to programmatically
 
 Overall, the Kubeflow Model Registry is a powerful tool for managing trained machine learning models within a Kubernetes environment, and can help to ensure reproducibility, collaboration, and scalability throughout the entire machine learning lifecycle.
 
-
-
 ### Kubeflow Pipelines
+
 Kubeflow Pipelines is a platform for building and deploying machine learning pipelines on Kubernetes. It provides a way to build, run, and manage end-to-end machine learning workflows that include data preparation, model training, and deployment.
 
 Kubeflow Pipelines is a web-based graphical user interface (GUI) that allows users to design and manage machine learning workflows using a drag-and-drop interface. Workflows are created by connecting pre-built reusable components, called pipeline components, which can be custom-built or imported from a pre-existing library of components. Each pipeline component is designed to perform a specific task, such as data preprocessing, feature engineering, model training, or deployment.
@@ -312,16 +313,18 @@ Kubeflow Pipelines is a web-based graphical user interface (GUI) that allows use
 Pipelines can be version-controlled, shared, and executed on any Kubernetes cluster, on-premises or in the cloud. Kubeflow Pipelines also provides a suite of built-in tools for visualizing and monitoring the progress of pipelines, debugging and profiling, and sharing results.
 
 ### Kubeflow Serving
+
 Kubeflow Serving is a component of the Kubeflow platform that is used for deploying machine learning models and making predictions. It is designed to be scalable and flexible, allowing for easy deployment of models to a variety of serving platforms, including Kubernetes clusters and cloud services.
 
 Kubeflow Serving provides a set of APIs for serving machine learning models, including support for TensorFlow Serving, PyTorch Serving, and ONNX Runtime. It also supports advanced features like model versioning and canary deployment, which enable teams to easily manage multiple versions of a model and test new versions before deploying them to production.
+
 ### Kubeflow Metadata
+
 Kubeflow Metadata is a component of the Kubeflow platform that provides a way to track, organize, and manage metadata for ML workflows. It allows data scientists and ML engineers to define and track experiments, datasets, models, and other artifacts associated with ML workflows.
 
 Kubeflow Metadata can be used to track metadata across different stages of the machine learning workflow, from data preparation to model training, validation, deployment, and monitoring. It can also be used to manage and version models and datasets, and to compare different versions and configurations of models.
 
 Kubeflow Metadata is integrated with other Kubeflow components such as Kubeflow Pipelines, Kubeflow Training Operators, and Kubeflow Serving, and it can be used with various machine learning frameworks and tools. It provides a flexible and extensible platform for managing metadata that can help data scientists and ML engineers to track and improve their ML workflows.
-
 
 ### K8s Monitoring
 
@@ -334,7 +337,6 @@ Deploying monitoring agents as sidecar containers: Kubernetes allows multiple co
 Monitoring model performance using Kubernetes metrics: Kubernetes collects a variety of metrics related to the performance of pods and containers, including CPU usage, memory usage, and network traffic. These metrics can be used to monitor the performance of a deployed machine learning model.
 
 Using Kubernetes-based monitoring tools: There are several Kubernetes-based tools for model monitoring, such as Prometheus and Grafana. These tools allow you to collect and visualize metrics related to the performance and behavior of your machine learning models.
-
 
 ### Kubeflow best practices
 
@@ -350,7 +352,6 @@ Use a pipeline for automation: Use Kubeflow Pipelines to automate your ML workfl
 Use security best practices: Use security best practices to protect your data and models. This includes encrypting data at rest and in transit, using strong authentication and access control mechanisms, and monitoring for security threats.
 Use a cloud-native approach: Use a cloud-native approach to take advantage of the scalability and flexibility of cloud computing. This includes using Kubernetes for container orchestration, and taking advantage of cloud-native storage and networking solutions.
 
-
 ### Kubeflow python example
 
 Here is an example of a simple Kubeflow pipeline using Python.
@@ -361,6 +362,7 @@ First, you will need to install `kfp` which stands for Kubeflow Pipelines, which
 
 !pip install kfp
 ```
+
 Next, you can define your pipeline using the kfp.dsl module. Here's an example pipeline that uses the print_op function to output some text:
 
 ```python
@@ -378,6 +380,7 @@ def my_pipeline():
         arguments=['echo "Hello, world!"']
     )
 ```
+
 In this pipeline, we've defined a single ContainerOp called print_op. This will run a container using the alpine:3.6 image, and execute the echo "Hello, world!" command inside the container.
 
 Finally, you can compile and run the pipeline using the kfp.Client:
@@ -394,10 +397,11 @@ run_name = pipeline_func.__name__ + ' run'
 arguments = {}
 
 pipeline = client.create_run_from_pipeline_func(
-    pipeline_func, 
-    experiment_name=experiment_name, 
-    run_name=run_name, 
+    pipeline_func,
+    experiment_name=experiment_name,
+    run_name=run_name,
     arguments=arguments
 )
 ```
+
 This will compile and submit the pipeline to your Kubeflow cluster, and start a new run with the specified arguments. Once the run completes, you can view the results in the Kubeflow UI.

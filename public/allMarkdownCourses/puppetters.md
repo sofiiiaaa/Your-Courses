@@ -1,8 +1,9 @@
 \pagebreak
 
-<!-- toc -->
-
 ## Puppeteer
+
+<!-- toc -->
+<!--tocstop-->
 
 Puppeteer is a powerful tool for automating web scraping tasks, and it can be used with Python through the pyppeteer library. In this guide, I will provide a detailed explanation of how to use Puppeteer with Python to create a web scraper.
 
@@ -14,13 +15,16 @@ Puppeteer is built on top of the Chrome DevTools Protocol, which allows it to co
 Getting Started
 
 To get started with Puppeteer, you will need to have Node.js and NPM (Node Package Manager) installed on your machine. You can download Node.js from the official website at https://nodejs.org/en/. Once you have Node.js installed, you can install Puppeteer by running the following command in your terminal:
+
 ```
 npm install puppeteer
 ```
+
 This will install Puppeteer and all of its dependencies.
 Using Puppeteer with Python
 
 To use Puppeteer with Python, we will be using the pyppeteer library, which provides a Python interface to Puppeteer. You can install pyppeteer using pip:
+
 ```
 pip install pyppeteer
 ```
@@ -68,7 +72,6 @@ await page.screenshot({ path: 'screenshot.png' });
 
 This will take a screenshot of the current page and save it to a file named screenshot.png. You can call this method at any point in your script to capture the state of the page at that point.
 
-
 ## Common actions
 
 ### Clicking Buttons
@@ -93,7 +96,7 @@ input = await page.querySelector('#my-input')
 await input.type('Hello, world!')
 ```
 
-In this example, we use the querySelector method of the page object to find an element with the ID my-input. We then call the type method of the input element to simulate typing the text into the input. 
+In this example, we use the querySelector method of the page object to find an element with the ID my-input. We then call the type method of the input element to simulate typing the text into the input.
 
 ### Search by xpath and plain text
 
@@ -137,6 +140,7 @@ To navigate to a URL, you can use the goto method of a page object. For example,
 
 await page.goto('https://www.example.com')
 ```
+
 In this example, we use the goto method of the page object to navigate to the URL https://www.example.com.
 
 ### Catching Errors

@@ -1,10 +1,12 @@
 \pagebreak
 
 <!-- toc -->
-
+<!--tocstop-->
 
 # Alarms
+
 ## Introduction
+
 Alarms are a way to control the flow of code and interrupt long-running processes in Python. In this guide, we will learn how to use alarms in Python to interrupt a process after a certain amount of time has elapsed. We will first discuss the basics of alarms, including how they work and why they are useful. Then, we will delve into the details of using alarms in Python and provide step-by-step examples of how to implement them in your code. Finally, we will cover some best practices for using alarms effectively.
 
 What are Alarms?
@@ -80,7 +82,6 @@ finally:
 signal.alarm(0) # Cancel alarms
 ```
 
-
 In this example, we set two alarms: one to trigger after 5 seconds and another to trigger after 10 seconds. If the long-running process takes longer than 10 seconds to complete, the TimeoutError exception will be raised.
 
 Canceling Alarms
@@ -118,4 +119,3 @@ signal.SIGPIPE: Broken pipe
 signal.SIGQUIT: Quit from keyboard
 signal.SIGSEGV: Segmentation fault
 signal.SIGTERM: Termination signal
-	

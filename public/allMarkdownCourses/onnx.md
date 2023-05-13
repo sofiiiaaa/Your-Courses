@@ -1,9 +1,12 @@
 \pagebreak
 
-<!-- toc -->
+# ONNX
 
-# ONNX 
+<!--toc-->
+<!--tocstop-->
+
 ## Introduction
+
 ONNX stands for Open Neural Network Exchange, and it is an open-source format for representing machine learning models. It allows for the interoperability and exchange of trained models between different deep learning frameworks, such as PyTorch, TensorFlow, and Caffe.
 
 ONNX was created by Microsoft and Facebook in 2017 to address the need for a standardized format that could allow for the seamless transfer of trained models across different frameworks. This would enable data scientists and engineers to choose the best deep learning framework for their specific use case without worrying about compatibility issues or the need to retrain the model from scratch.
@@ -21,6 +24,7 @@ Deployment: Finally, the ONNX model can be deployed on any platform that support
 Overall, ONNX makes it easier to work with machine learning models by providing a standardized format that allows for interoperability and exchange between different deep learning frameworks. This reduces the need for developers and data scientists to retrain models or rewrite code when working with different frameworks, which can save time and resources.
 
 ## Advantages
+
 Some of the key advantages of ONNX:
 
 Interoperability: ONNX allows for the seamless exchange of trained models between different deep learning frameworks, making it easier for developers and data scientists to work with multiple frameworks without having to rewrite code or retrain models from scratch. This can save time and resources and can also help to reduce the risk of errors that can occur when translating models between different formats.
@@ -38,6 +42,7 @@ Visualization: ONNX allows for the visualization of models using tools such as N
 Accessibility: ONNX is available for free and can be used by anyone, regardless of their level of expertise. This makes it accessible to a wide range of users, from beginners to experts, and can help to democratize the use of deep learning models.
 
 ### Visualization models
+
 ONNX allows for the visualization of machine learning models using tools such as Netron. Netron is an open-source viewer for deep learning models that can display models in a variety of formats, including ONNX, TensorFlow, and PyTorch. Here are some of the types of visualizations that can be done using Netron:
 
 Graph Visualization: Netron allows users to visualize the structure of the neural network graph in the ONNX model. This can help users to understand the different layers and connections within the model and how they relate to each other.
@@ -53,6 +58,7 @@ Comparison Visualization: Netron allows users to compare different versions of a
 Export Visualization: Netron allows users to export the visualization of a model in various formats, including HTML, JSON, and SVG, which can be useful for sharing with others or embedding in web pages.
 
 ### Perfomance
+
 ONNX can be beneficial for performance and production use cases. Here are some of the ways in which ONNX can improve performance:
 
 Hardware Optimization: ONNX allows developers to optimize their models for specific hardware platforms, such as GPUs or CPUs, which can result in faster inference times and lower latency. This can be particularly important in production environments, where fast and efficient inference is critical.
@@ -79,10 +85,10 @@ Install the required dependencies: To export a Hugging Face transformer model to
 pip install transformers
 pip install onnxruntime
 ```
+
 Load the pre-trained model: Use the transformers library to load the pre-trained model you want to convert to ONNX format.
 
 Export the model to ONNX format: Use the ONNX exporter provided by transformers to export the model to ONNX format. Here is an example code snippet:
-
 
 ```py
 import torch
@@ -103,6 +109,7 @@ This code snippet loads the pre-trained BERT model from Hugging Face, converts a
 Once you have converted your Hugging Face transformer model to ONNX format, you can use it for inference on various platforms and devices, including CPUs, GPUs, and edge devices.
 
 ### Inference
+
 To do inference on an ONNX model, you can use the ONNX Runtime, an open-source library for high-performance inference on machine learning models in ONNX format. Here are the basic steps to perform inference on an ONNX model using the ONNX Runtime:
 
 1. Load the ONNX model: Use the onnxruntime.InferenceSession() function to load the ONNX model into memory:
@@ -198,18 +205,18 @@ Step 4: Create a Configuration File
 Before you can deploy your ONNX model with ONNX Runtime Inference Server, you need to create a configuration file that specifies the settings for your deployment. The configuration file is a JSON file that specifies the model and the settings for the inference server.
 
 Here is an example configuration file:
+
 ```json
 {
-    "model_config_list": [
-        {
-            "name": "my_model",
-            "base_path": "/path/to/my/model",
-            "model_platform": "onnxruntime",
-            "max_batch_size": 32
-        }
-    ]
+  "model_config_list": [
+    {
+      "name": "my_model",
+      "base_path": "/path/to/my/model",
+      "model_platform": "onnxruntime",
+      "max_batch_size": 32
+    }
+  ]
 }
-
 ```
 
 This configuration file specifies that there is one model named "my_model" located in the directory "/path/to/my/model", which was exported using the ONNX Runtime platform and has a maximum batch size of 32.
@@ -301,7 +308,6 @@ If you need to serve your model to a larger number of users or need to handle mo
 
 To do this, you can use a container orchestration platform such as Kubernetes or Docker Swarm to manage your deployment. The ONNX Runtime Inference Server Docker image is designed to work seamlessly with these platforms and can be easily deployed to a cluster of servers.
 
-
 ### VS torchserve
 
 Whether to use TorchServe or ONNX for deploying your models depends on your specific use case and requirements.
@@ -313,5 +319,3 @@ On the other hand, ONNX provides a standardized format for representing models t
 In some cases, it may be possible to use both TorchServe and ONNX together. For example, you could convert a PyTorch model to ONNX format and then deploy it using TorchServe. This would allow you to take advantage of the features provided by TorchServe while still being able to use the ONNX format.
 
 Ultimately, the decision of whether to use TorchServe or ONNX (or both) will depend on your specific requirements and constraints, as well as your familiarity with the different tools and frameworks.
-
-
