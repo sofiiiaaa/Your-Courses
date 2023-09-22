@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+.landing-page-card {
+  height: 200px;
+  background-color: aqua;
+}
+
+.landing-page-title {
+  text-align: center;
+  color: aliceblue;
+  z-index: 10000;
+}
+
+.landing-page-button {
+  text-align: center;
+}
+
+.landing-page-option-images {
+  height: 180px;
+  object-fit: cover;
+}
+
+.option-block {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.option-card-title {
+  text-align: center;
+  color: black;
+}
+
+.card-img-overlay {
+  margin-top: 25vh;
+}
+
+.general-visualisation-list-courses {
+  text-align: -webkit-center;
+}
+
+.card-category {
+  margin: 1rem;
+}
+
+.single-card-course {
+  margin: 10px auto;
+  max-width: 300px;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.single-card-course .image-course-card {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.single-card-course .image-course-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.single-card-course .card-body {
+  padding: 15px;
+  text-align: center;
+}
+.single-card-course .card-body .card-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.title-header {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.spinner-col {
+  text-align: center;
+  margin: 5rem;
+}
+.spinner-col .spinner-element {
+  width: 5rem;
+  height: 5rem;
+}
+
+.upfront-image {
+  padding: 5px;
+  border-radius: 2px 2px 0 0;
+  border: 1px solid #333333;
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto 3rem;
+}
+
+.markdown-content {
+  font-family: "Merriweather", serif;
+  color: #333;
+  line-height: 1.8;
+}
+.markdown-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.25rem;
+}
+.markdown-content h1, .markdown-content h2, .markdown-content h3, .markdown-content h4, .markdown-content h5, .markdown-content h6 {
+  font-family: "Roboto", sans-serif;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.markdown-content h1 {
+  font-size: 2em;
+}
+.markdown-content h2 {
+  font-size: 1.75em;
+}
+.markdown-content h3 {
+  font-size: 1.5em;
+}
+.markdown-content h4 {
+  font-size: 1.25em;
+}
+.markdown-content h5 {
+  font-size: 1em;
+}
+.markdown-content h6 {
+  font-size: 0.875em;
+}
+.markdown-content p {
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-weight: 400;
+}
+.markdown-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+.markdown-content a:hover {
+  text-decoration: underline;
+}
+.markdown-content ul, .markdown-content ol {
+  padding-left: 2em;
+}
+.markdown-content blockquote {
+  margin-left: 0;
+  padding-left: 1em;
+  border-left: 0.25em solid #dfe2e5;
+  color: #6a737d;
+}
+.markdown-content .token {
+  text-decoration: none !important;
+}
+.markdown-content code {
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+.markdown-content pre {
+  padding: 1em;
+  overflow: auto;
+}
+
+.footer {
+  background-color: #1a2b4c;
+  color: #f8f9fa;
+}
+.footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #adb5bd;
+}
+
+.vertical-navbar {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  color: #000000;
+  background-color: #f5f5f5;
+  font: "Arial", sans-serif;
+}
+.vertical-navbar .vertical-toc ul {
+  padding-left: 1em;
+}
+.vertical-navbar .vertical-toc li {
+  line-height: 1;
+  font: "Arial", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.vertical-navbar .vertical-toc a {
+  text-decoration: none;
+  color: #333;
+}
+.vertical-navbar .vertical-toc a:hover {
+  color: #007BFF;
+}
+.vertical-navbar .close-btn {
+  position: absolute;
+  background-color: #f8f9fa;
+  right: 25px;
+  top: 10px;
+  color: black;
+  border: 0 solid black;
+}
+.vertical-navbar .navbar-toggler {
+  padding-top: 1rem;
+  position: fixed;
+  left: 10px;
+  z-index: 2;
+}
+.vertical-navbar .navbar-toggler:hover {
+  cursor: pointer;
+  background-color: #f8f9fa;
+  color: #000000;
+}
+.vertical-navbar.open {
+  width: 400px;
+}
+.vertical-navbar .nav-items {
+  height: 100%;
+  width: 100%;
+  padding-top: 60px;
+  background-color: #f8f9fa;
+  overflow: auto;
+}
+.vertical-navbar .nav-items a {
+  display: block;
+  padding: 10px 20px;
+}
+
+body {
+  background-color: #f5f5f5;
+  z-index: -100000000;
+}
+
+.main-container {
+  min-height: calc(100vh - 70px - 66px);
+}
+
+.footer {
+  font: "Arial", sans-serif;
+}
+.footer .footer-icons {
+  padding: 0 0.2rem;
+}
+
+.navbar {
+  background-color: #1a2b4c;
+}
+.navbar .navbar-brand, .navbar .nav-link {
+  font-weight: bold;
+  color: #f8f9fa !important;
+}
+
+/*# sourceMappingURL=main.css.map */
