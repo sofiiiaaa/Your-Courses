@@ -1,51 +1,41 @@
 @import './variables.scss';
-@import './mixins.scss';
 
-.landing-page-card{
-    min-height: 85vh;
-    background-color: aqua;
+.landing-page-card {
+  height: 200px;
+  background-color: aqua;
 }
 
-.landing-page-img{
-    width: 100vh;
-    height: 50vh;
-    text-align: center;
+
+.landing-page-title {
+  text-align: center;
+  color: aliceblue;
+  z-index: 10000;
 }
 
-.landing-page-title{
-    text-align: center;
-    color:aliceblue;
-    z-index:10000;
+.landing-page-button {
+  text-align: center;
 }
 
-.landing-page-button{
-    text-align: center;
+.landing-page-option-images {
+  height: 180px;
+          object-fit: cover;
 }
 
-.landing-page-option-images{
-    height: 180px;
+.option-block {
+  display: flex;
+  text-align: center;
+  justify-content: space-between; // Change here to add space between flex items
 }
 
-.option-block{
-    display: flex;
-    text-align: center;
-    justify-content: center
-    
+.option-card-title {
+  text-align: center;
+  color: black;
 }
 
-.option-card-title{
-    color:black;
+.card-img-overlay {
+  margin-top: 25vh;
 }
 
-.card-img-overlay{
-    margin-top: 25vh;
+.general-visualisation-list-courses {
+  text-align: -webkit-center;
 }
-
-.general-visualisation-list-courses{
-    text-align: -webkit-center;
-}
-
-    .cardCategory{
-        margin: 3.5rem;
-        padding-right:0px;
-    }

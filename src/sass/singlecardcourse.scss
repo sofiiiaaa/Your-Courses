@@ -1,0 +1,39 @@
+@import "variables";
+
+.card-category{
+  margin: 1rem;
+}
+
+.single-card-course {
+  margin: 10px auto;
+  max-width: 300px;
+  font-family: $font-family;
+  color: $font-black-color;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+  .image-course-card {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-body {
+    padding: 15px;
+    text-align: center;
+
+    .card-title {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}

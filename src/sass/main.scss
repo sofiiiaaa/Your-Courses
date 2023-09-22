@@ -1,12 +1,34 @@
 @import './variables.scss';
-@import './mixins.scss';
-@import './landingpage.scss'; 
-@import './cardcourse';
-@import './listcourses.scss';
+@import './landingpage.scss';
+@import 'singlecardcourse';
 @import './markdowntext.scss';
 @import './footer.scss';
-   
-body{
-    background-color: rgb(47, 45, 45);
-    z-index: -100000000;
+@import './sidebar.scss';
+
+
+body {
+  background-color: $background-color;
+  z-index: -100000000;
+}
+
+.main-container {
+  min-height: calc(100vh - 70px - 66px);
+}
+
+.footer {
+  font: $font-family;
+
+  .footer-icons {
+    padding: 0 0.2rem;
+  }
+
+}
+
+.navbar {
+  background-color: $navbar-color;
+
+  .navbar-brand, .nav-link {
+    font-weight: bold;
+    color: #f8f9fa !important; // This is Bootstrap's color for light text
+  }
 }
