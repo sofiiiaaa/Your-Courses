@@ -15,7 +15,7 @@ const SingleCardCourse: React.FC<CardCourseProps> = ({course}) => {
             <Link to={course.name.toLowerCase()} className="nav-link">
                 <Card className="single-card-course">
                     <div className="image-course-card">
-                        <Card.Img variant="top" src={course.image}/>
+                        <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/${course.image}`}/>
                     </div>
                     <Card.Body>
                         <Card.Title>{course.name}</Card.Title>

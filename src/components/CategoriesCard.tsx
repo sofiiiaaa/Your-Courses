@@ -17,7 +17,7 @@ const CategoriesCard: React.FC<CardCourseProps> = ({category}) => {
                     <Card.Img
                         variant="top"
                         className="landing-page-option-images"
-                        src={category.image}
+                        src={`${process.env.PUBLIC_URL}/${category.image}`}
                     />
                     <Card.Body>
                         <Card.Title className="option-card-title">

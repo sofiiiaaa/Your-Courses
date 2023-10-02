@@ -29,7 +29,7 @@ const App: React.FC = () => {
         const [categories, setCategories] = useState<CourseCategory[]>([]);
 
         useEffect(() => {
-            fetchData("/allCourses/courses_mapping.json")
+            fetchData(`${process.env.PUBLIC_URL}/allCourses/courses_mapping.json`)
                 .then((data) => setCategories(data))
                 .catch((error) => console.error(error));
         }, []);

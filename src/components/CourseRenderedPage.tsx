@@ -47,7 +47,7 @@ const CourseRenderedPage: React.FC<SingleRenderedCoursePageProps> = ({course}) =
     const [toc, setToc] = useState("");
 
     useEffect(() => {
-        fetch(course.file_path)
+        fetch(`${process.env.PUBLIC_URL}/${course.file_path}`)
             .then(response => response.text())
             .then(text => {
                 setToc(getToc(text));
@@ -86,7 +86,7 @@ const CourseRenderedPage: React.FC<SingleRenderedCoursePageProps> = ({course}) =
                 </Col>
                 <Col xs={12}>
                     <div className="upfront-image-div">
-                        <img src={"/" + course.image} alt={course.name} className="upfront-image"/>
+                        <img src={`${process.env.PUBLIC_URL}/${course.image}`} alt={course.name} className="upfront-image"/>
                     </div>
                 </Col>
                 <hr/>
@@ -111,7 +111,7 @@ const CourseRenderedPage: React.FC<SingleRenderedCoursePageProps> = ({course}) =
                                 code: CodeBlock,
                             }}
                             transformImageUri={
-                                (uri) => uri.startsWith('http') ? uri : `${course.file_path.split("/").slice(0, -1).join("/")}/${uri}`}
+                                (uri) => uri.startsWith('http') ? uri : `${process.env.PUBLIC_URL}/${course.file_path.split("/").slice(0, -1).join("/")}/${uri}`}
                             // @ts-ignore
                             rehypePlugins={[rehypeKatex]}
                             remarkPlugins={[
