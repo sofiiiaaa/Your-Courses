@@ -38,7 +38,7 @@ const App: React.FC = () => {
         if (categories.length === 0) {
             return <div></div>;
         }
-
+        console.log(categories)
         return (
             <HashRouter>
                 <NavigationBar categories={[...new Set(categories.map((item) => item.name))]}/>
