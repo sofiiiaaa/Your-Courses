@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from "react";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import NavigationBar from "./components/layout/NavigationBar";
 import FooterApp from "./components/layout/FooterApp";
 import HomePage from "./components/HomePage";
 import {fetchData} from "./components/utils/fetchData";
 import CategoryCoursesList from "./components/CategoryCoursesList";
 import CourseRenderedPage from "./components/CourseRenderedPage";
+import { HashRouter } from 'react-router-dom';
 
 import "./css/main.css";
 
@@ -39,10 +40,10 @@ const App: React.FC = () => {
         }
 
         return (
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter basename={`${process.env.PUBLIC_URL}`}>
                 <NavigationBar categories={[...new Set(categories.map((item) => item.name))]}/>
                 <Routes>
-                    <Route path={`${process.env.PUBLIC_URL}`} element={<HomePage categories={categories}/>}/>
+                    <Route path="/" element={<HomePage categories={categories}/>}/>
                     {categories.map((category) =>
                         <Route
                             path={category.name}
@@ -61,7 +62,7 @@ const App: React.FC = () => {
                     )};
                 </Routes>
                 <FooterApp/>
-            </BrowserRouter>
+            </HashRouter>
         );
     }
 ;
