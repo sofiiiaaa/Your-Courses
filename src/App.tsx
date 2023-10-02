@@ -38,12 +38,11 @@ const App: React.FC = () => {
             return <div></div>;
         }
 
-
         return (
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <NavigationBar categories={[...new Set(categories.map((item) => item.name))]}/>
                 <Routes>
-                    <Route path="/" element={<HomePage categories={categories}/>}/>
+                    <Route path={`${process.env.PUBLIC_URL}`} element={<HomePage categories={categories}/>}/>
                     {categories.map((category) =>
                         <Route
                             path={category.name}

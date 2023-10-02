@@ -12,7 +12,6 @@ const HomePage: React.FC<HomePageProps> = ({categories}) => {
         <React.Fragment>
             <Container fluid className="main-container">
                 <Row className="align-items-center pt-5 justify-content-center">
-                    <div>rows {{categories}}</div>
                     {categories.map((category) =>
                         <CategoriesCard category={category} key={category.id}/>)
                     }
