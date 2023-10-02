@@ -40,7 +40,7 @@ const App: React.FC = () => {
         }
 
         return (
-            <HashRouter basename={`${process.env.PUBLIC_URL}`}>
+            <HashRouter>
                 <NavigationBar categories={[...new Set(categories.map((item) => item.name))]}/>
                 <Routes>
                     <Route path="/" element={<HomePage categories={categories}/>}/>
