@@ -1,19 +1,22 @@
+import VerticalNavbar from "./layout/VerticalNavbar";
+
 import React, {useState, useEffect} from "react";
 import {Container, Col, Row, Spinner} from "react-bootstrap";
 import {Course} from "../App";
 
 import ReactMarkdown from "react-markdown";
+
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-import 'katex/dist/katex.min.css'; // `rehype-katex` does not import the CSS for you
+import 'katex/dist/katex.min.css';
 
 import remarkToc from 'remark-toc';
+import remarkSlug from "remark-slug";
 
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import {atomDark} from 'react-syntax-highlighter/dist/esm/styles/prism';
 import {CodeComponent} from "react-markdown/lib/ast-to-react";
-import VerticalNavbar from "./layout/VerticalNavbar";
 
 
 interface SingleRenderedCoursePageProps {
@@ -74,8 +77,6 @@ const CourseRenderedPage: React.FC<SingleRenderedCoursePageProps> = ({course}) =
         )
     }
 
-    // @ts-ignore
-    // @ts-ignore
     return (
         <Container className="main-container">
             <Row>
@@ -114,9 +115,10 @@ const CourseRenderedPage: React.FC<SingleRenderedCoursePageProps> = ({course}) =
                             // @ts-ignore
                             rehypePlugins={[rehypeKatex]}
                             remarkPlugins={[
+                                [remarkToc, {maxDepth: 1, prefix: 'toc', tight: true, ordered: true}],
                                 remarkGfm,
                                 remarkMath,
-                                [remarkToc, {maxDepth: 1, prefix: 'toc', tight: true, ordered: true}],
+                                remarkSlug
                             ]}
 
                         />
