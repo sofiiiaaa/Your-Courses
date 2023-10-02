@@ -18,7 +18,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({categories}) => {
     return (
         <Navbar bg="primary" expand="lg" variant="dark">
             <Container fluid>
-                <Navbar.Brand href="/">
+                <Navbar.Brand href={`${process.env.PUBLIC_URL}`}>
                     <FontAwesomeIcon icon={faHome}/> &nbsp; | &nbsp;
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll"/>
