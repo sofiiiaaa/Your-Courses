@@ -1,9 +1,8 @@
 import VerticalNavbar from "./layout/VerticalNavbar";
 
-import React, {useState, useEffect} from "react";
-import {Container, Col, Row, Spinner} from "react-bootstrap";
-import {Course} from "../App";
-
+import React, {useEffect, useState} from "react";
+import {Breadcrumb, Col, Container, Row, Spinner} from "react-bootstrap";
+import {Course, Topic} from "../App";
 import ReactMarkdown from "react-markdown";
 
 import remarkGfm from 'remark-gfm';
@@ -17,20 +16,27 @@ import remarkSlug from "remark-slug";
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import {atomDark} from 'react-syntax-highlighter/dist/esm/styles/prism';
 import {CodeComponent} from "react-markdown/lib/ast-to-react";
+import {Link} from "react-router-dom";
+import StickyHomeButton from "./layout/StickyHomeButton";
 
 
 interface SingleRenderedCoursePageProps {
-    course: Course;
+    course: Course | Topic;
+    categoryName: string;
+    courseName?: string;
 }
 
 function cleanMarkdown(markdown: string): string {
     return (
         markdown
             .replace(/<!-- toc -->/g, "")
-            .replace(/<!-- tocstop -->/g, "---")
             .replace(/\\pagebreak/g, "")
             .replace(/\\newpage/g, "")
+            .split(/<!-- tocstop -->/g)[1]
+            .replaceAll("end-toc", "")
             .replace(/<!--.*?-->/g, "")
+            .replace(/<--.*? -->/g, "")
+            .trim()
     )
 }
 
@@ -41,7 +47,7 @@ function getToc(markdown: string): string {
     return markdown.slice(tocStart, tocEnd);
 }
 
-const CourseRenderedPage: React.FC<SingleRenderedCoursePageProps> = ({course}) => {
+const CourseRenderedPage: React.FC<SingleRenderedCoursePageProps> = ({course, categoryName, courseName}) => {
     const [markdown, setMarkdown] = useState("");
     const [loading, setLoading] = useState(true);
     const [toc, setToc] = useState("");
@@ -80,13 +86,24 @@ const CourseRenderedPage: React.FC<SingleRenderedCoursePageProps> = ({course}) =
     return (
         <Container className="main-container">
             <Row>
+                <Breadcrumb>
+                    <Breadcrumb.Item linkAs={Link} linkProps={{to: "/"}}>Home</Breadcrumb.Item>
+                    <Breadcrumb.Item linkAs={Link} linkProps={{to: `/${categoryName}`}}>{categoryName}</Breadcrumb.Item>
+                    {courseName &&
+                        <Breadcrumb.Item linkAs={Link} linkProps={{to: `/${categoryName}/${courseName}`}}>
+                            {courseName}
+                        </Breadcrumb.Item>
+                    }
+                    <Breadcrumb.Item active>{course.name}</Breadcrumb.Item>
+                </Breadcrumb>
                 <Col className="title-header" xs='12'>
-                    <h4>{course.name}</h4>
+                    <h4 className={"main-title"}>{course.name}</h4>
                     <hr/>
                 </Col>
                 <Col xs={12}>
                     <div className="upfront-image-div">
-                        <img src={`${process.env.PUBLIC_URL}/${course.image}`} alt={course.name} className="upfront-image"/>
+                        <img src={`${process.env.PUBLIC_URL}/${course.image}`} alt={course.name}
+                             className="upfront-image"/>
                     </div>
                 </Col>
                 <hr/>
@@ -104,6 +121,7 @@ const CourseRenderedPage: React.FC<SingleRenderedCoursePageProps> = ({course}) =
                     :
                     <Col xs="12" style={{paddingBottom: "20px"}}>
                         <VerticalNavbar rawToc={toc}/>
+                        <StickyHomeButton/>
                         <ReactMarkdown
                             children={markdown}
                             className="markdown-content"
@@ -115,7 +133,6 @@ const CourseRenderedPage: React.FC<SingleRenderedCoursePageProps> = ({course}) =
                             // @ts-ignore
                             rehypePlugins={[rehypeKatex]}
                             remarkPlugins={[
-                                [remarkToc, {maxDepth: 1, prefix: 'toc', tight: true, ordered: true}],
                                 remarkGfm,
                                 remarkMath,
                                 remarkSlug

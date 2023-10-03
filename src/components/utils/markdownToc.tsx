@@ -1,4 +1,6 @@
 import React, {ReactElement} from 'react';
+// @ts-ignore
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 function parseToc(toc: string): ReactElement[] {
@@ -47,7 +49,7 @@ function parseToc(toc: string): ReactElement[] {
 
             currentList.push(
                 <li className={`toc-level-${level}`}>
-                    <a href={`#${link}`}>{name}</a>
+                    <Link to={`#${link}`}>{name}</Link>
                 </li>
             );
         }

@@ -2,10 +2,10 @@ import React from "react";
 import Card from 'react-bootstrap/Card';
 import {Link} from 'react-router-dom';
 import {Col} from 'react-bootstrap';
-import {Course} from "../App";
+import {Course, Topic} from "../App";
 
 interface CardCourseProps {
-    course: Course;
+    course: Course | Topic;
 }
 
 
