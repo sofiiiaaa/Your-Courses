@@ -1,4 +1,5 @@
 import VerticalNavbar from "./layout/VerticalNavbar";
+import StickyHomeButton from "./layout/StickyHomeButton";
 
 import React, {useEffect, useState} from "react";
 import {Breadcrumb, Col, Container, Row, Spinner} from "react-bootstrap";
@@ -17,7 +18,7 @@ import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import {atomDark} from 'react-syntax-highlighter/dist/esm/styles/prism';
 import {CodeComponent} from "react-markdown/lib/ast-to-react";
 import {Link} from "react-router-dom";
-import StickyHomeButton from "./layout/StickyHomeButton";
+
 
 
 interface SingleRenderedCoursePageProps {
