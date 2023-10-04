@@ -11,7 +11,7 @@ interface CardCourseProps {
 
 const SingleCardCourse: React.FC<CardCourseProps> = ({course}) => {
     return (
-        <Col md={3}>
+        <Col xs={12} md={3} lg={2} className="mb-4 card-category">
             <Link to={course.name.toLowerCase()} className="nav-link">
                 <Card className="single-card-course">
                     <div className="image-course-card">

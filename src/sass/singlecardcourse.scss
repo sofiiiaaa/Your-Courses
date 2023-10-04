@@ -1,6 +1,6 @@
 @import "variables";
 
-.card-category{
+.card-category {
   margin: 1rem;
 }
 
@@ -27,13 +27,25 @@
   }
 
   .card-body {
-    padding: 15px;
-    text-align: center;
+      justify-content: center;
+      padding: 15px;
+      text-align: center;
+
 
     .card-title {
       margin: 0;
       font-size: 18px;
       font-weight: bold;
+      height: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .card-body .card-title {
+      font-size: 16px; // Reduce the font size on smaller screens
     }
   }
 }

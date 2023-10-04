@@ -20,7 +20,6 @@ import {CodeComponent} from "react-markdown/lib/ast-to-react";
 import {Link} from "react-router-dom";
 
 
-
 interface SingleRenderedCoursePageProps {
     course: Course | Topic;
     categoryName: string;
@@ -61,7 +60,9 @@ const CourseRenderedPage: React.FC<SingleRenderedCoursePageProps> = ({course, ca
                 setMarkdown(cleanMarkdown(text));
             })
             .then(() => setLoading(false))
-            .catch((error) => console.error(error));
+            .catch((error) => alert(
+                `Error loading markdown: \n ${process.env.PUBLIC_URL}${course.file_path} \n ${categoryName} - ${courseName} - ${course.name} \n ${error}`
+            ));
     }, [course.file_path]);
 
 

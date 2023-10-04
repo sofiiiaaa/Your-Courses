@@ -20,7 +20,7 @@ function parseToc(toc: string): ReactElement[] {
     let currentLevel = -1;
     let currentList: ReactElement[] = [];
     let parentLists: ReactElement[][] = [renderedToc];
-
+    let i=0;
     lines.forEach(line => {
         if (line.trim() === '') {
             return;
@@ -35,7 +35,7 @@ function parseToc(toc: string): ReactElement[] {
 
             while (currentLevel < level) {
                 const newList: ReactElement[] = [];
-                parentLists[currentLevel + 1].push(<ul>{newList} </ul>);
+                parentLists[currentLevel + 1].push(<ul key={`ul-${i++}`}>{newList} </ul>);
                 parentLists.push(newList);
                 currentList = newList;
                 currentLevel++;
@@ -48,7 +48,7 @@ function parseToc(toc: string): ReactElement[] {
             }
 
             currentList.push(
-                <li className={`toc-level-${level}`}>
+                <li className={`toc-level-${level}`} key={`toc-${name}`}>
                     <Link to={`#${link}`}>{name}</Link>
                 </li>
             );
