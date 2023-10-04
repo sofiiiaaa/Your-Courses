@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# ByteBrush
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DevPalette is a powerful application designed to transform your Markdown vertical studies on developer-related topics into beautifully formatted content. 
 
-## Available Scripts
+## ByteBrush
 
-In the project directory, you can run:
+As developers and tech enthusiasts, we often create in-depth vertical studies, documentation, and tutorials using Markdown. However, presenting these studies in a clear and visually appealing manner can be challenging. That's where ByteBrush comes in.
 
-### `npm start`
+## Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Markdown Magic**: Effortlessly import your Markdown documents and watch as ByteBrush works its magic to render them in a stunning and readable format.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Enhanced Readability**: Our app automatically optimizes the layout, typography, and styling, making your content easier to digest.
 
-### `npm test`
+- **Code Highlighting**: ByteBrush highlights code snippets, making them stand out and ensuring your readers focus on what's essential.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Customization**: Tailor the appearance of your studies with customizable themes, fonts, and color schemes to match your branding or personal style.
 
-### `npm run build`
+- **Responsive Design**: Your studies will look great on any device, from desktop to mobile, thanks to ByteBrush's responsive design.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Export Options**: Share your beautifully formatted studies effortlessly. Export them as PDFs or HTML files or even host them online.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone this repository.
+2. Install the ByteBrush app following the instructions in the [Installation Guide](#installation-guide).
+3. Start using ByteBrush to render your Markdown studies in style.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+For information on how to use ByteBrush to render your Markdown studies, please check out our [User Guide](docs/user-guide.md).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+We welcome contributions from the developer community. If you'd like to contribute to DevPalette, please review our [Contributing Guidelines](CONTRIBUTING.md).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## License
 
-## Learn More
+ByteBrush is open-source and released under the [MIT License](LICENSE.md).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

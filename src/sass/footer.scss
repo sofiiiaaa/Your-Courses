@@ -1,12 +1,16 @@
 @import 'variables';
-@import 'mixins';
 
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    justify-content: space-around;
-    background-color: rgb(219, 219, 219);
-    min-height: 5vh;
-    margin:0px;
+
+.footer {
+    background-color: $navbar-color;
+    color: #f8f9fa;
+
+    a {
+        color: #f8f9fa;
+        text-decoration: none;
+
+        &:hover {
+            color: #adb5bd;
+        }
+    }
 }

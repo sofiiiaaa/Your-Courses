@@ -1,0 +1,76 @@
+@import 'variables';
+
+.vertical-navbar {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  color: $font-black-color;
+  background-color: $background-color;
+  font: $font-family;
+
+  .vertical-toc {
+    ul {
+      //list-style-type: none;
+      padding-left: 1em; // Reduces the initial tab space
+    }
+
+    li {
+      line-height: 1; // Makes the lines closer to each other
+      font: $font-family; // Sets the font family
+      font-size: 0.9em; // Sets the font size
+      font-weight: 500; // Sets the font weight
+    }
+
+    a {
+      text-decoration: none; // Removes the underline
+      color: #333; // Sets the link color
+
+      &:hover {
+        color: #007BFF; // Changes the link color on hover
+      }
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    background-color: #f8f9fa;
+    right: 25px;
+    top: 10px;
+    color: black;
+    border: 0 solid black;
+  }
+
+  .navbar-toggler {
+    padding-top: 1rem;
+    position: fixed;
+    left: 10px;
+    z-index: 2;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #f8f9fa;
+      color: $font-black-color;
+    }
+  }
+
+  &.open {
+    width: 400px;
+  }
+
+  .nav-items {
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+    background-color: #f8f9fa;
+    overflow: auto;
+
+    a {
+      display: block;
+      padding: 10px 20px;
+    }
+  }
+}
+
