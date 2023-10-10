@@ -87,31 +87,31 @@
         "id": 10,
         "name": "AWS Security",
         "file_path": "/allCourses/allMarkdownCourses/aws/10. Security-toc.md",
-        "image": "allCourses/courseCardImages/vpc.png"
+        "image": "allCourses/courseCardImages/aws_security.png"
       },
       {
         "id": 11,
         "name": "AWS Machine Learning",
         "file_path": "/allCourses/allMarkdownCourses/aws/11. Machine Learning-toc.md",
-        "image": "allCourses/courseCardImages/vpc.png"
+        "image": "allCourses/courseCardImages/aws_ml.jpg"
       },
       {
         "id": 12,
         "name": "AWS Remaining services",
         "file_path": "/allCourses/allMarkdownCourses/aws/12. Other services-toc.md",
-        "image": "allCourses/courseCardImages/vpc.png"
+        "image": "allCourses/courseCardImages/aws_other.png"
       },
       {
         "id": 13,
         "name": "AWS Costs",
         "file_path": "/allCourses/allMarkdownCourses/aws/13 Costs-toc.md",
-        "image": "allCourses/courseCardImages/vpc.png"
+        "image": "allCourses/courseCardImages/aws_cost.webp"
       },
       {
         "id": 14,
         "name": "AWS 14 Architecting and ecosystem",
         "file_path": "/allCourses/allMarkdownCourses/aws/14 Architecting and ecosystem-toc.md",
-        "image": "allCourses/courseCardImages/vpc.png"
+        "image": "allCourses/courseCardImages/aws_pillars.jpg"
       }
     ]
   },
@@ -312,19 +312,19 @@
             "id": 9,
             "name": "Intro",
             "file_path": "/allCourses/allMarkdownCourses/frontend/js/intro-toc.md",
-            "image": "allCourses/courseCardImages/intro.png"
+            "image": "allCourses/courseCardImages/js_intro.webp"
           },
           {
             "id": 6,
             "name": "Data Types",
             "file_path": "/allCourses/allMarkdownCourses/frontend/js/data_types-toc.md",
-            "image": "allCourses/courseCardImages/data_types.png"
+            "image": "allCourses/courseCardImages/data_types.jpg"
           },
           {
             "id": 5,
             "name": "Control Flow",
             "file_path": "/allCourses/allMarkdownCourses/frontend/js/control_flow-toc.md",
-            "image": "allCourses/courseCardImages/control_flow.png"
+            "image": "allCourses/courseCardImages/control_flow.jpg"
           },
           {
             "id": 10,
@@ -342,7 +342,7 @@
             "id": 7,
             "name": "Error Handling",
             "file_path": "/allCourses/allMarkdownCourses/frontend/js/error_handling-toc.md",
-            "image": "allCourses/courseCardImages/error_handling.png"
+            "image": "allCourses/courseCardImages/errors.jpg"
           },
           {
             "id": 2,
@@ -354,7 +354,7 @@
             "id": 3,
             "name": "Browser API",
             "file_path": "/allCourses/allMarkdownCourses/frontend/js/browser_api-toc.md",
-            "image": "allCourses/courseCardImages/browser_api.png"
+            "image": "allCourses/courseCardImages/browser_api.jpg"
           },
           {
             "id": 4,

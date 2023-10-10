@@ -499,7 +499,7 @@ console.log(str[str.length - 1]); // Output: d
 ```
 
 #### Exercises
-You can download the exercises here [string_exercises.zip](./string_exercises/string_exercises.zip)
+You can download the exercises here [string_exercises.zip](https://github.com/GabrieleGhisleni/ByteBrush/blob/main/public/allCourses/allMarkdownCourses/frontend/js/string_exercises/string_exercises.zip)
 
 ### Array
 
@@ -766,7 +766,7 @@ console.log(array[2][2]); // 9
 ```
 
 #### Exercises
-You can download the exercises here [array_exercises.zip](./array_exercises/array_exercises.zip)
+You can download the exercises here [array_exercises.zip](https://github.com/GabrieleGhisleni/ByteBrush/blob/main/public/allCourses/allMarkdownCourses/frontend/js/array_exercises/array_exercises.zip)
 
 ### Sets
 
@@ -1144,4 +1144,4 @@ let person2 = new Person("Mary", 25);
 
 #### Exercises
 
-You can download the exercises here [objects_exercises.zip](./objects_exercises/objects_exercises.zip)
+You can download the exercises here [objects_exercises.zip](https://github.com/GabrieleGhisleni/ByteBrush/blob/main/public/allCourses/allMarkdownCourses/frontend/js/objects_exercises/objects_exercises.zip)
