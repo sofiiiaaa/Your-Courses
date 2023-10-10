@@ -112,6 +112,7 @@
   height: auto;
   display: block;
   margin: 0 auto;
+  max-height: 450px;
   border-radius: 0.25rem;
 }
 .markdown-content h1, .markdown-content h2, .markdown-content h3, .markdown-content h4, .markdown-content h5, .markdown-content h6 {
