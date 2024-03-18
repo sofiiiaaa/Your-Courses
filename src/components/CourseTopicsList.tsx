@@ -1,8 +1,8 @@
 import React from "react";
 
 import {Container, Row} from "react-bootstrap";
-import {Course} from "./App";
-import SingleCardCourse from "./components/SingleCardCourse";
+import SingleCardCourse from "./SingleCardCourse";
+import {Course} from "../App";
 
 
 interface ListCoursesProps {

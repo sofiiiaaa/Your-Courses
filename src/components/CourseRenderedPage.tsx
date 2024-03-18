@@ -135,9 +135,9 @@ const CourseRenderedPage: React.FC<SingleRenderedCoursePageProps> = ({course, ca
                             // @ts-ignore
                             rehypePlugins={[rehypeKatex]}
                             remarkPlugins={[
-                                remarkGfm,
                                 remarkMath,
-                                remarkSlug
+                                remarkSlug,
+                                remarkGfm,
                             ]}
 
                         />

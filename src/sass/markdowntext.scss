@@ -163,3 +163,16 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; // Make the text color transparent to show the background gradient
 }
+
+@media only screen and (max-width: 600px) {
+  .breadcrumb  {
+    font-size: 10px;
+    padding: 0;
+    word-spacing: -5px;
+    line-height: 1.2;
+  }
+
+  .breadcrumb-item{
+    margin-top: 5px;
+  }
+}

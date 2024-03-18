@@ -74,3 +74,8 @@
   }
 }
 
+@media (max-width: 767px) {
+  .vertical-navbar.open {
+    width: 300px;
+  }
+}

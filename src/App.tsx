@@ -9,7 +9,8 @@ import CourseRenderedPage from "./components/CourseRenderedPage";
 import {HashRouter} from 'react-router-dom';
 
 import "./css/main.css";
-import CourseTopicsList from "./CourseTopicsList";
+import CourseTopicsList from "./components/CourseTopicsList";
+
 
 export interface Topic {
     id: number;
@@ -31,6 +32,7 @@ export interface CourseCategory {
     name: string;
     image: string;
     courses: Course[];
+    reference?: string;
 }
 
 
@@ -39,7 +41,11 @@ const App: React.FC = () => {
 
         useEffect(() => {
             fetchData(`${process.env.PUBLIC_URL}/allCourses/courses_mapping.json`)
-                .then((data) => setCategories(data))
+                .then(
+                    (data) => setCategories(
+                        data.filter((item: CourseCategory) => item.reference || item.courses.length > 0 )
+                    )
+                )
                 .catch((error) => console.error(error));
         }, []);
 

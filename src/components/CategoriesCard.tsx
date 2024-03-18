@@ -12,7 +12,7 @@ interface CardCourseProps {
 const CategoriesCard: React.FC<CardCourseProps> = ({category}) => {
     return (
         <Col xs={12} md={3} lg={2} className="mb-4 card-category">
-            <Link to={category.name} className={"nav-link"}>
+            <Link to={category.reference ? category.reference : category.name} className={"nav-link"}>
                 <Card>
                     <Card.Img
                         variant="top"
